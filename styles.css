@@ -1,58 +1,90 @@
-/* General */
-body {
-  font-family: Arial, sans-serif;
+* {
   margin: 0;
   padding: 0;
-  line-height: 1.6;
-  color: #333;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
 }
 
-/* Hero Section */
-.hero {
-  background: linear-gradient(120deg, #0f2027, #203a43, #2c5364);
-  color: white;
-  padding: 80px 20px;
+body {
+  display: flex;
+  background: #2f2a2a;
+  color: #eaeaea;
+}
+
+/* SIDEBAR */
+.sidebar {
+  width: 260px;
+  background: #241f1f;
+  height: 100vh;
+  position: fixed;
+  padding: 30px 20px;
   text-align: center;
 }
 
-.hero span {
-  color: #00e6e6;
+.profile-pic {
+  width: 120px;
+  border-radius: 50%;
+  margin-bottom: 15px;
 }
 
-/* Buttons */
-.btn {
-  display: inline-block;
-  margin-top: 20px;
-  padding: 10px 25px;
-  background: #00e6e6;
-  color: #000;
+.sidebar h2 {
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+
+.sidebar nav a {
+  display: block;
+  padding: 12px;
+  color: #ccc;
   text-decoration: none;
-  border-radius: 25px;
-  font-weight: bold;
+  border-bottom: 1px solid #333;
 }
 
-/* Sections */
+.sidebar nav a:hover {
+  background: #333;
+  color: #00bcd4;
+}
+
+/* CONTENT */
+.content {
+  margin-left: 260px;
+  padding: 40px;
+  width: 100%;
+}
+
 section {
-  padding: 50px 20px;
-  max-width: 900px;
-  margin: auto;
+  margin-bottom: 80px;
 }
 
 h2 {
-  border-bottom: 2px solid #00e6e6;
-  display: inline-block;
-  margin-bottom: 20px;
+  color: #00bcd4;
+  font-size: 36px;
+  margin-bottom: 15px;
+  border-bottom: 2px dotted #555;
+  padding-bottom: 8px;
 }
 
-/* Projects */
-.project {
-  background: #f4f4f4;
+h3 {
+  margin-bottom: 10px;
+}
+
+.hero h1 {
+  font-size: 48px;
+}
+
+.hero span {
+  color: #00e5ff;
+}
+
+.hero p {
+  margin-top: 10px;
+  font-size: 18px;
+}
+
+/* CARDS */
+.card {
+  background: #3a3333;
   padding: 20px;
-  border-radius: 10px;
-  margin-bottom: 20px;
-}
-
-/* Contact */
-#contact p {
-  margin: 8px 0;
+  margin-top: 20px;
+  border-radius: 8px;
 }
