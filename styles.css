@@ -43,13 +43,6 @@ body {
   color: #00e5ff;
   border-left: 4px solid #00e5ff;
 }
-.sidebar {
-  width: 260px;
-  background: #1f1c1c;
-  height: 100vh;
-  padding: 20px;
-  position: fixed;
-}
 
 .profile-box {
   width: 140px;
