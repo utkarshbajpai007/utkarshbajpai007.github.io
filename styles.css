@@ -5,7 +5,7 @@ body {
   color: #fff;
 }
 
-/* SIDEBAR */
+/* Sidebar */
 .sidebar {
   position: fixed;
   left: 0;
@@ -13,38 +13,60 @@ body {
   width: 260px;
   height: 100vh;
   background: #1e1e1e;
-  padding: 20px 0;
+  padding: 20px 15px;
+  box-sizing: border-box;
 }
 
-.sidebar nav {
-  margin-top: 30px;
+/* Profile Section */
+.profile {
+  text-align: center;
+  margin-bottom: 30px;
 }
 
-.sidebar nav a {
-  display: flex;               /* ⭐ MAGIC LINE */
-  align-items: center;         /* ⭐ aligns icons vertically */
-  gap: 14px;                   /* space between icon & text */
+.profile img {
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  border: 3px solid #00e5ff;
+  object-fit: cover;
+}
 
-  padding: 12px 25px;
+.profile h2 {
+  color: #00e5ff;
+  font-size: 16px;
+  margin-top: 12px;
+}
+
+/* Menu */
+.menu {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.menu a {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 14px;
   color: #ddd;
   text-decoration: none;
+  border-radius: 6px;
   font-size: 15px;
-  transition: all 0.3s ease;
 }
 
-.sidebar nav a i {
-  width: 20px;                 /* ⭐ forces all icons same line */
+.menu a:hover,
+.menu a.active {
+  background: #00e5ff;
+  color: #000;
+}
+
+/* Icons */
+.menu .icon {
+  width: 22px;
   text-align: center;
   font-size: 16px;
 }
-
-.sidebar nav a:hover,
-.sidebar nav a.active {
-  background: #00e5ff;
-  color: #000;
-  border-radius: 6px;
-}
-
 
 /* CONTENT */
 .content {
@@ -69,4 +91,8 @@ section h2 {
   color: #00e5ff;
   border-bottom: 1px dashed #555;
   padding-bottom: 10px;
+}
+.main-content {
+    margin-left: 260px;   /* SAME as sidebar width */
+    padding: 30px;
 }
