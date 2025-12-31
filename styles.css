@@ -22,14 +22,6 @@ body {
 }
 
 
-.profile-pic {
-  width: 140px;
-  height: 140px;
-  border-radius: 50%;
-  object-fit: cover;
-  border: 4px solid #00bcd4;
-  margin-bottom: 15px;
-}
 
 .sidebar h2 {
   margin-bottom: 20px;
@@ -91,21 +83,19 @@ h3 {
   padding: 20px;
   margin-top: 20px;
   border-radius: 8px;
-}
-/* Profile Image Container */
-.profile-pic {
+.profile-box {
   width: 160px;
   height: 160px;
-  margin: 20px auto;
+  margin: 0 auto 15px;
   border-radius: 50%;
   overflow: hidden;
   border: 3px solid #00e5ff;
 }
 
-/* Profile Image */
-.profile-pic img {
+.profile-box img {
   width: 100%;
   height: 100%;
-  object-fit: cover;   /* THIS fixes distortion */
+  object-fit: cover;
   display: block;
 }
+
