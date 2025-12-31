@@ -21,27 +21,20 @@ body {
   padding: 0;
 }
 
-.sidebar li {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  padding: 12px 20px;
-  color: #bbb;
-  cursor: pointer;
-  transition: 0.3s;
+.sidebar {
+    position: fixed;      /* MOST IMPORTANT */
+    top: 0;
+    left: 0;
+    width: 260px;         /* same width everywhere */
+    height: 100vh;        /* full screen height */
+    background: #1f1f1f;
+    overflow-y: auto;     /* scroll inside sidebar if needed */
 }
 
-.sidebar li i {
-  font-size: 18px;
-  width: 22px;
-  text-align: center;
-}
-
-.sidebar li:hover,
-.sidebar li.active {
-  background: #1f1f1f;
-  color: #00e5ff;
-  border-left: 4px solid #00e5ff;
+/* Push main content to right */
+.main-content {
+    margin-left: 260px;
+    padding: 30px;
 }
 
 .profile-box {
