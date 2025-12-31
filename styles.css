@@ -12,44 +12,39 @@ body {
   top: 0;
   width: 260px;
   height: 100vh;
-  background: #1f1c1c;
+  background: #1e1e1e;
+  padding: 20px 0;
+}
+
+.sidebar nav {
+  margin-top: 30px;
+}
+
+.sidebar nav a {
+  display: flex;               /* ⭐ MAGIC LINE */
+  align-items: center;         /* ⭐ aligns icons vertically */
+  gap: 14px;                   /* space between icon & text */
+
+  padding: 12px 25px;
+  color: #ddd;
+  text-decoration: none;
+  font-size: 15px;
+  transition: all 0.3s ease;
+}
+
+.sidebar nav a i {
+  width: 20px;                 /* ⭐ forces all icons same line */
   text-align: center;
-  padding-top: 20px;
+  font-size: 16px;
 }
 
-.profile-img {
-  width: 120px;
-  height: 120px;
-  border-radius: 50%;
-  border: 3px solid #00e5ff;
+.sidebar nav a:hover,
+.sidebar nav a.active {
+  background: #00e5ff;
+  color: #000;
+  border-radius: 6px;
 }
 
-.sidebar h2 {
-  color: #00e5ff;
-  margin: 15px 0;
-  font-size: 18px;
-}
-
-.sidebar ul {
-  list-style: none;
-  padding: 0;
-}
-
-.sidebar ul li {
-  padding: 15px;
-  cursor: pointer;
-  color: #ccc;
-}
-
-.sidebar ul li i {
-  margin-right: 10px;
-  color: #00e5ff;
-}
-
-.sidebar ul li:hover {
-  background: #2e2a2a;
-  color: #fff;
-}
 
 /* CONTENT */
 .content {
