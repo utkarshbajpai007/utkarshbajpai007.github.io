@@ -1,3 +1,8 @@
+.layout {
+  display: flex;
+  min-height: 100vh;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -14,14 +19,13 @@ body {
 /* SIDEBAR */
 .sidebar {
   width: 260px;
-  background: #241f1f;
-  height: 100vh;
+  background: #1f1f1f;
+  padding: 20px;
   position: fixed;
-  padding: 30px 20px;
-  text-align: center;
+  height: 100vh;
+  left: 0;
+  top: 0;
 }
-
-
 
 .sidebar h2 {
   margin-bottom: 20px;
@@ -44,8 +48,8 @@ body {
 /* CONTENT */
 .content {
   margin-left: 260px;
-  padding: 40px;
-  width: 100%;
+  padding: 30px;
+  flex: 1;
 }
 
 section {
@@ -83,6 +87,8 @@ h3 {
   padding: 20px;
   margin-top: 20px;
   border-radius: 8px;
+}
+
 .profile-box {
   width: 160px;
   height: 160px;
