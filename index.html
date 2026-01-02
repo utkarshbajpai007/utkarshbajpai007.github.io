@@ -8,25 +8,24 @@
   <!-- Google Font -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
-  <!-- Font Awesome Icons -->
-  <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-  />
+  <!-- Font Awesome -->
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
-  <!-- MAIN CSS (OPTION 2: ROOT PATH) -->
+  <!-- CSS -->
   <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
 
-<!-- ================= NAVBAR ================= -->
+<!-- NAVBAR -->
 <header class="navbar">
   <div class="container nav-flex">
     <div class="logo">Utkarsh Bajpai</div>
     <ul class="nav-links">
       <li><a href="#home">Home</a></li>
       <li><a href="#about">About</a></li>
+      <li><a href="#experience">Experience</a></li>
       <li><a href="#skills">Skills</a></li>
       <li><a href="#projects">Projects</a></li>
       <li><a href="#contact">Contact</a></li>
@@ -34,63 +33,95 @@
   </div>
 </header>
 
-<!-- ================= HOME ================= -->
+<!-- HERO -->
 <section id="home" class="hero">
-  <div class="container">
-    <h1>Hi, I'm <span>Utkarsh Bajpai</span></h1>
-    <h3>People Analytics | Data Analyst</h3>
-    <p>Transforming HR & business data into actionable insights.</p>
+  <div class="container hero-grid">
+    <div class="hero-text">
+      <h1>Hi, I'm <span>Utkarsh Bajpai</span></h1>
+      <h3>People Analytics | Data Analyst</h3>
+      <p>Transforming HR & business data into actionable insights.</p>
 
-    <div class="hero-buttons">
-      <a href="#projects" class="btn">View Projects</a>
-      <a href="#" class="btn-outline">Download Resume</a>
+      <div class="hero-buttons">
+        <a href="#projects" class="btn">View Projects</a>
+        <a href="#" class="btn-outline">Download Resume</a>
+      </div>
+    </div>
+
+    <div class="hero-image">
+      <img src="profile.png" alt="Utkarsh Bajpai">
     </div>
   </div>
 </section>
 
-<!-- ================= ABOUT ================= -->
-<section id="about">
+<!-- ABOUT -->
+<section id="about" class="reveal">
   <div class="container">
     <h2 class="section-title">About Me</h2>
-
     <p class="about-text">
-      I am a data-driven professional transitioning from HR IT Recruitment into
-      <strong>People Analytics & Data Analytics</strong>. I specialize in using data
-      to improve workforce decisions, operational efficiency, and strategic planning.
+      Data-driven professional transitioning from HR IT Recruitment into
+      <strong>People Analytics & Data Analytics</strong>. I specialize in workforce
+      analytics, dashboards, and data-driven decision-making.
     </p>
 
     <h3 class="sub-title">Services I Provide</h3>
 
-    <div class="services">
-      <div class="service-card">
+    <div class="card-grid">
+      <div class="card">
         <i class="fa-solid fa-chart-line"></i>
         <h4>People Analytics</h4>
-        <p>Workforce metrics, attrition analysis, hiring analytics, and HR dashboards.</p>
+        <p>Attrition, workforce metrics, and hiring analytics.</p>
       </div>
 
-      <div class="service-card">
+      <div class="card">
         <i class="fa-solid fa-database"></i>
         <h4>Data Analysis</h4>
-        <p>Data cleaning, analysis, and insight generation using Excel, SQL, and Python.</p>
+        <p>Excel, SQL & Python data analysis and insights.</p>
       </div>
 
-      <div class="service-card">
+      <div class="card">
         <i class="fa-solid fa-chart-pie"></i>
         <h4>Dashboard Development</h4>
-        <p>Interactive dashboards using Power BI and Excel for decision-making.</p>
+        <p>Power BI & Excel dashboards for leadership.</p>
       </div>
 
-      <div class="service-card">
+      <div class="card">
         <i class="fa-solid fa-briefcase"></i>
         <h4>HR Tech Consulting</h4>
-        <p>Optimizing HR systems, recruitment analytics, and reporting workflows.</p>
+        <p>Recruitment analytics & HR reporting optimization.</p>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ================= SKILLS ================= -->
-<section id="skills" class="alt-bg">
+<!-- EXPERIENCE -->
+<section id="experience" class="alt-bg reveal">
+  <div class="container">
+    <h2 class="section-title">Work Experience</h2>
+
+    <div class="card-grid">
+      <div class="card experience-card">
+        <h4>HR IT Recruiter</h4>
+        <span>2022 – Present</span>
+        <p>
+          Worked on end-to-end hiring, recruitment analytics, ATS reporting,
+          and stakeholder management. Built dashboards to track hiring KPIs.
+        </p>
+      </div>
+
+      <div class="card experience-card">
+        <h4>People Analytics Trainee</h4>
+        <span>2024 – Present</span>
+        <p>
+          Hands-on experience with attrition analysis, workforce dashboards,
+          Power BI reports, and HR metrics optimization.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills" class="reveal">
   <div class="container">
     <h2 class="section-title">Skills</h2>
     <div class="skills">
@@ -104,31 +135,32 @@
   </div>
 </section>
 
-<!-- ================= PROJECTS ================= -->
-<section id="projects">
+<!-- PROJECTS -->
+<section id="projects" class="alt-bg reveal">
   <div class="container">
     <h2 class="section-title">Projects</h2>
-    <div class="projects">
-      <div class="project-card">
+
+    <div class="card-grid">
+      <div class="card">
         <h4>HR Attrition Dashboard</h4>
-        <p>Power BI dashboard analyzing attrition trends and key drivers.</p>
+        <p>Power BI dashboard analyzing attrition trends and drivers.</p>
       </div>
 
-      <div class="project-card">
+      <div class="card">
         <h4>Recruitment Analytics</h4>
-        <p>Hiring funnel analysis to improve recruitment efficiency.</p>
+        <p>Hiring funnel and time-to-hire analysis.</p>
       </div>
 
-      <div class="project-card">
-        <h4>Excel Data Model</h4>
-        <p>Advanced Excel Power Pivot and Power Query project.</p>
+      <div class="card">
+        <h4>Excel Power Pivot Model</h4>
+        <p>Advanced Power Query & Power Pivot data model.</p>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ================= CONTACT ================= -->
-<section id="contact" class="alt-bg">
+<!-- CONTACT -->
+<section id="contact" class="reveal">
   <div class="container">
     <h2 class="section-title">Contact Me</h2>
 
@@ -136,21 +168,15 @@
       <input type="text" placeholder="Your Name" required>
       <input type="email" placeholder="Your Email" required>
       <textarea rows="5" placeholder="Your Message" required></textarea>
-      <button type="submit" class="btn">Send Message</button>
+      <button class="btn">Send Message</button>
     </form>
   </div>
 </section>
 
-<!-- ================= FOOTER ================= -->
 <footer>
   <p>© 2026 Utkarsh Bajpai</p>
-  <div class="social-links">
-    <a href="#"><i class="fab fa-linkedin"></i></a>
-    <a href="#"><i class="fab fa-github"></i></a>
-  </div>
 </footer>
 
-<!-- MAIN JS (OPTION 2: ROOT PATH) -->
 <script src="./main.js"></script>
 </body>
 </html>
