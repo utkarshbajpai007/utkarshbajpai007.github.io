@@ -1,43 +1,43 @@
-/* Smooth Scroll */
-document.querySelectorAll('a[href^="#"]').forEach(link => {
-  link.addEventListener('click', e => {
-    e.preventDefault();
-    document.querySelector(link.getAttribute('href'))
-      .scrollIntoView({ behavior: 'smooth' });
-  });
-});
+// DARK MODE
+document.getElementById("themeToggle").onclick = () =>
+  document.body.classList.toggle("dark");
 
-/* Scroll Spy */
+// SCROLL SPY
 const sections = document.querySelectorAll("section");
-const navLinks = document.querySelectorAll(".nav-link");
+const navLinks = document.querySelectorAll(".sidebar nav a");
 
 window.addEventListener("scroll", () => {
   let current = "";
-  sections.forEach(sec => {
+  sections.forEach(section => {
     const top = window.scrollY;
-    const offset = sec.offsetTop - 150;
-    if (top >= offset) current = sec.getAttribute("id");
+    if (top >= section.offsetTop - 200) {
+      current = section.getAttribute("id");
+    }
   });
 
-  navLinks.forEach(link => {
-    link.classList.remove("active");
-    if (link.getAttribute("href") === `#${current}`) {
-      link.classList.add("active");
+  navLinks.forEach(a => {
+    a.classList.remove("active");
+    if (a.getAttribute("href") === "#" + current) {
+      a.classList.add("active");
     }
   });
 });
 
-/* Reveal Animation */
+// REVEAL ANIMATION
 const reveals = document.querySelectorAll(".reveal");
-window.addEventListener("scroll", () => {
-  reveals.forEach(r => {
-    if (r.getBoundingClientRect().top < window.innerHeight - 100) {
-      r.classList.add("active");
-    }
-  });
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(e => e.isIntersecting && e.target.classList.add("active"));
 });
+reveals.forEach(r => observer.observe(r));
 
-/* Dark Mode */
-document.getElementById("darkToggle").onclick = () => {
-  document.body.classList.toggle("dark");
-};
+// PORTFOLIO MODAL
+const modal = document.getElementById("modal");
+const modalTitle = document.getElementById("modalTitle");
+document.querySelectorAll(".portfolio-item").forEach(item => {
+  item.onclick = () => {
+    modal.style.display = "block";
+    modalTitle.innerText = item.dataset.title;
+  };
+});
+document.getElementById("closeModal").onclick = () =>
+  modal.style.display = "none";
