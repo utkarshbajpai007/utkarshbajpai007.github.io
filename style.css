@@ -1,104 +1,57 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
+.social-icons a {
+  color: #00bfff;
+  margin: 0 8px;
+  font-size: 20px;
 }
 
-body {
-  background: #2f2b2b;
-  color: #fff;
-}
-
-/* Sidebar */
-.sidebar {
-  width: 260px;
-  height: 100vh;
-  position: fixed;
-  background: #1f1c1c;
-  padding: 20px;
-  text-align: center;
-}
-
-.profile-img {
-  width: 120px;
-  border-radius: 50%;
-  margin-bottom: 10px;
-}
-
-.sidebar nav a {
+.resume-btn {
   display: block;
-  padding: 12px;
-  color: #ccc;
-  text-decoration: none;
-  transition: 0.3s;
-}
-
-.sidebar nav a:hover {
+  margin-top: 20px;
   background: #00bfff;
   color: #fff;
+  padding: 10px;
+  border-radius: 8px;
+  text-decoration: none;
 }
 
-/* Content */
-.content {
-  margin-left: 280px;
-  padding: 40px;
-}
-
-.section {
-  margin-bottom: 80px;
-}
-
-.section h2 {
-  border-bottom: 2px solid #00bfff;
-  display: inline-block;
-  margin-bottom: 20px;
-}
-
-/* Experience */
-.dark {
-  background: #1a1818;
-  padding: 40px;
-  border-radius: 15px;
-}
-
-.experience-card {
-  background: #000;
-  padding: 30px;
-  border-radius: 15px;
-  margin-bottom: 30px;
-}
-
-/* Skills */
-.skills-grid {
+.services-grid, .cert-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(180px,1fr));
+  grid-template-columns: repeat(auto-fit, minmax(220px,1fr));
   gap: 20px;
 }
 
-.skill-card {
+.service-card, .cert-card {
   background: #fff;
   color: #000;
-  padding: 30px;
+  padding: 25px;
   border-radius: 15px;
   text-align: center;
   transition: 0.3s;
 }
 
-.skill-card:hover {
+.service-card:hover, .cert-card:hover {
   transform: translateY(-8px);
 }
 
-/* Certificates */
-.cert-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
-  gap: 20px;
+.contact-form {
+  max-width: 500px;
+  margin-top: 20px;
 }
 
-.cert-card {
-  background: #fff;
-  color: #000;
-  padding: 30px;
-  border-radius: 15px;
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  margin-bottom: 15px;
+  padding: 12px;
+  border-radius: 8px;
+  border: none;
+}
+
+.contact-form button {
+  background: #00bfff;
+  color: #fff;
+  padding: 12px;
+  width: 100%;
+  border: none;
+  border-radius: 8px;
 }
