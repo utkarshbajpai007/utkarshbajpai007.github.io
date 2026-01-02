@@ -1,40 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="UTF-8">
   <title>Utkarsh Bajpai | Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <!-- Google Font -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
-  <!-- Font Awesome -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <!-- Font Awesome Icons -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+  />
 
-  <link rel="stylesheet" href="css/style.css">
+  <!-- MAIN CSS (OPTION 2: ROOT PATH) -->
+  <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
 
 <!-- ================= NAVBAR ================= -->
-<header>
-  <div class="container nav-container">
+<header class="navbar">
+  <div class="container nav-flex">
     <div class="logo">Utkarsh Bajpai</div>
-    <nav>
-      <ul class="nav-links">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
+    <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
   </div>
 </header>
 
 <!-- ================= HOME ================= -->
 <section id="home" class="hero">
-  <div class="container hero-content">
+  <div class="container">
     <h1>Hi, I'm <span>Utkarsh Bajpai</span></h1>
     <h3>People Analytics | Data Analyst</h3>
     <p>Transforming HR & business data into actionable insights.</p>
@@ -53,34 +55,33 @@
 
     <p class="about-text">
       I am a data-driven professional transitioning from HR IT Recruitment into
-      <strong>People Analytics & Data Analytics</strong>. I specialize in using data to
-      improve workforce decisions, operational efficiency, and strategic planning.
+      <strong>People Analytics & Data Analytics</strong>. I specialize in using data
+      to improve workforce decisions, operational efficiency, and strategic planning.
     </p>
 
-    <!-- SERVICES -->
     <h3 class="sub-title">Services I Provide</h3>
 
-    <div class="services-grid">
+    <div class="services">
       <div class="service-card">
-        <i class="fas fa-chart-line"></i>
+        <i class="fa-solid fa-chart-line"></i>
         <h4>People Analytics</h4>
         <p>Workforce metrics, attrition analysis, hiring analytics, and HR dashboards.</p>
       </div>
 
       <div class="service-card">
-        <i class="fas fa-database"></i>
+        <i class="fa-solid fa-database"></i>
         <h4>Data Analysis</h4>
         <p>Data cleaning, analysis, and insight generation using Excel, SQL, and Python.</p>
       </div>
 
       <div class="service-card">
-        <i class="fas fa-chart-pie"></i>
+        <i class="fa-solid fa-chart-pie"></i>
         <h4>Dashboard Development</h4>
         <p>Interactive dashboards using Power BI and Excel for decision-making.</p>
       </div>
 
       <div class="service-card">
-        <i class="fas fa-briefcase"></i>
+        <i class="fa-solid fa-briefcase"></i>
         <h4>HR Tech Consulting</h4>
         <p>Optimizing HR systems, recruitment analytics, and reporting workflows.</p>
       </div>
@@ -89,17 +90,16 @@
 </section>
 
 <!-- ================= SKILLS ================= -->
-<section id="skills" class="light-bg">
+<section id="skills" class="alt-bg">
   <div class="container">
     <h2 class="section-title">Skills</h2>
-
-    <div class="skills-grid">
-      <div class="skill">Python</div>
-      <div class="skill">SQL</div>
-      <div class="skill">Power BI</div>
-      <div class="skill">Excel</div>
-      <div class="skill">Statistics</div>
-      <div class="skill">People Analytics</div>
+    <div class="skills">
+      <span>Python</span>
+      <span>SQL</span>
+      <span>Power BI</span>
+      <span>Excel</span>
+      <span>Statistics</span>
+      <span>People Analytics</span>
     </div>
   </div>
 </section>
@@ -108,8 +108,7 @@
 <section id="projects">
   <div class="container">
     <h2 class="section-title">Projects</h2>
-
-    <div class="projects-grid">
+    <div class="projects">
       <div class="project-card">
         <h4>HR Attrition Dashboard</h4>
         <p>Power BI dashboard analyzing attrition trends and key drivers.</p>
@@ -129,7 +128,7 @@
 </section>
 
 <!-- ================= CONTACT ================= -->
-<section id="contact" class="light-bg">
+<section id="contact" class="alt-bg">
   <div class="container">
     <h2 class="section-title">Contact Me</h2>
 
@@ -151,6 +150,7 @@
   </div>
 </footer>
 
-<script src="js/main.js"></script>
+<!-- MAIN JS (OPTION 2: ROOT PATH) -->
+<script src="./main.js"></script>
 </body>
 </html>
