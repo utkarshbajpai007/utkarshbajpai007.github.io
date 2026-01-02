@@ -1,181 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Utkarsh Bajpai | Portfolio</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<title>Utkarsh Bajpai | Portfolio</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- Google Font -->
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-
-  <!-- Font Awesome -->
-  <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-
-  <!-- CSS -->
-  <link rel="stylesheet" href="./style.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
 
-<!-- NAVBAR -->
-<header class="navbar">
-  <div class="container nav-flex">
-    <div class="logo">Utkarsh Bajpai</div>
-    <ul class="nav-links">
-      <li><a href="#home">Home</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="#experience">Experience</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#contact">Contact</a></li>
+<!-- ========== SIDEBAR ========== -->
+<aside class="sidebar">
+  <img src="profile.png" class="profile-img">
+  <h2>Utkarsh Bajpai</h2>
+  <p>People Analytics<br>Data Analyst</p>
+
+  <nav>
+    <a href="#home"><i class="fa fa-home"></i> Home</a>
+    <a href="#about"><i class="fa fa-user"></i> About Me</a>
+    <a href="#education"><i class="fa fa-graduation-cap"></i> Education</a>
+    <a href="#skills"><i class="fa fa-chart-bar"></i> Skills</a>
+    <a href="#experience"><i class="fa fa-briefcase"></i> Experience</a>
+    <a href="#portfolio"><i class="fa fa-folder-open"></i> Portfolio</a>
+    <a href="#certificates"><i class="fa fa-certificate"></i> Certificates</a>
+    <a href="#contact"><i class="fa fa-envelope"></i> Contact</a>
+  </nav>
+</aside>
+
+<!-- ========== MAIN CONTENT ========== -->
+<main class="content">
+
+<section id="home" class="section hero">
+  <h1>Hi, I'm <span>Utkarsh Bajpai</span></h1>
+  <h3>People Analytics | Data Analyst</h3>
+  <p>Transforming HR & business data into actionable insights.</p>
+</section>
+
+<section id="about" class="section">
+  <h2>About Me</h2>
+  <p>
+    Data-driven professional transitioning from HR IT Recruitment into
+    People Analytics & Data Analytics with strong expertise in dashboards,
+    workforce analytics, and data storytelling.
+  </p>
+</section>
+
+<section id="experience" class="section dark">
+  <h2>Experience</h2>
+
+  <div class="experience-card">
+    <h3>People Analytics Analyst</h3>
+    <span>HR Tech Organization | 2023 – Present</span>
+    <ul>
+      <li>Built HR dashboards for attrition & hiring trends</li>
+      <li>Analyzed workforce KPIs using Power BI & SQL</li>
+      <li>Automated reporting workflows</li>
     </ul>
   </div>
-</header>
 
-<!-- HERO -->
-<section id="home" class="hero">
-  <div class="container hero-grid">
-    <div class="hero-text">
-      <h1>Hi, I'm <span>Utkarsh Bajpai</span></h1>
-      <h3>People Analytics | Data Analyst</h3>
-      <p>Transforming HR & business data into actionable insights.</p>
-
-      <div class="hero-buttons">
-        <a href="#projects" class="btn">View Projects</a>
-        <a href="#" class="btn-outline">Download Resume</a>
-      </div>
-    </div>
-
-    <div class="hero-image">
-      <img src="profile.png" alt="Utkarsh Bajpai">
-    </div>
+  <div class="experience-card">
+    <h3>HR IT Recruiter</h3>
+    <span>Staffing Firm | 2021 – 2023</span>
+    <ul>
+      <li>Managed end-to-end IT recruitment</li>
+      <li>Improved hiring funnel efficiency using data insights</li>
+    </ul>
   </div>
 </section>
 
-<!-- ABOUT -->
-<section id="about" class="reveal">
-  <div class="container">
-    <h2 class="section-title">About Me</h2>
-    <p class="about-text">
-      Data-driven professional transitioning from HR IT Recruitment into
-      <strong>People Analytics & Data Analytics</strong>. I specialize in workforce
-      analytics, dashboards, and data-driven decision-making.
-    </p>
+<section id="skills" class="section">
+  <h2>Skills & Expertise</h2>
 
-    <h3 class="sub-title">Services I Provide</h3>
-
-    <div class="card-grid">
-      <div class="card">
-        <i class="fa-solid fa-chart-line"></i>
-        <h4>People Analytics</h4>
-        <p>Attrition, workforce metrics, and hiring analytics.</p>
-      </div>
-
-      <div class="card">
-        <i class="fa-solid fa-database"></i>
-        <h4>Data Analysis</h4>
-        <p>Excel, SQL & Python data analysis and insights.</p>
-      </div>
-
-      <div class="card">
-        <i class="fa-solid fa-chart-pie"></i>
-        <h4>Dashboard Development</h4>
-        <p>Power BI & Excel dashboards for leadership.</p>
-      </div>
-
-      <div class="card">
-        <i class="fa-solid fa-briefcase"></i>
-        <h4>HR Tech Consulting</h4>
-        <p>Recruitment analytics & HR reporting optimization.</p>
-      </div>
-    </div>
+  <div class="skills-grid">
+    <div class="skill-card">Python</div>
+    <div class="skill-card">SQL</div>
+    <div class="skill-card">Power BI</div>
+    <div class="skill-card">Excel</div>
+    <div class="skill-card">Statistics</div>
+    <div class="skill-card">People Analytics</div>
+    <div class="skill-card">EDA</div>
+    <div class="skill-card">HR Dashboards</div>
   </div>
 </section>
 
-<!-- EXPERIENCE -->
-<section id="experience" class="alt-bg reveal">
-  <div class="container">
-    <h2 class="section-title">Work Experience</h2>
+<section id="certificates" class="section">
+  <h2>Certificates & Achievements</h2>
 
-    <div class="card-grid">
-      <div class="card experience-card">
-        <h4>HR IT Recruiter</h4>
-        <span>2022 – Present</span>
-        <p>
-          Worked on end-to-end hiring, recruitment analytics, ATS reporting,
-          and stakeholder management. Built dashboards to track hiring KPIs.
-        </p>
-      </div>
-
-      <div class="card experience-card">
-        <h4>People Analytics Trainee</h4>
-        <span>2024 – Present</span>
-        <p>
-          Hands-on experience with attrition analysis, workforce dashboards,
-          Power BI reports, and HR metrics optimization.
-        </p>
-      </div>
-    </div>
+  <div class="cert-grid">
+    <div class="cert-card">Google Data Analytics</div>
+    <div class="cert-card">Power BI Certification</div>
+    <div class="cert-card">SQL Advanced</div>
   </div>
 </section>
 
-<!-- SKILLS -->
-<section id="skills" class="reveal">
-  <div class="container">
-    <h2 class="section-title">Skills</h2>
-    <div class="skills">
-      <span>Python</span>
-      <span>SQL</span>
-      <span>Power BI</span>
-      <span>Excel</span>
-      <span>Statistics</span>
-      <span>People Analytics</span>
-    </div>
-  </div>
+<section id="contact" class="section">
+  <h2>Contact</h2>
+  <form class="contact-form">
+    <input type="text" placeholder="Name" required>
+    <input type="email" placeholder="Email" required>
+    <textarea placeholder="Message"></textarea>
+    <button>Send</button>
+  </form>
 </section>
 
-<!-- PROJECTS -->
-<section id="projects" class="alt-bg reveal">
-  <div class="container">
-    <h2 class="section-title">Projects</h2>
-
-    <div class="card-grid">
-      <div class="card">
-        <h4>HR Attrition Dashboard</h4>
-        <p>Power BI dashboard analyzing attrition trends and drivers.</p>
-      </div>
-
-      <div class="card">
-        <h4>Recruitment Analytics</h4>
-        <p>Hiring funnel and time-to-hire analysis.</p>
-      </div>
-
-      <div class="card">
-        <h4>Excel Power Pivot Model</h4>
-        <p>Advanced Power Query & Power Pivot data model.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- CONTACT -->
-<section id="contact" class="reveal">
-  <div class="container">
-    <h2 class="section-title">Contact Me</h2>
-
-    <form class="contact-form">
-      <input type="text" placeholder="Your Name" required>
-      <input type="email" placeholder="Your Email" required>
-      <textarea rows="5" placeholder="Your Message" required></textarea>
-      <button class="btn">Send Message</button>
-    </form>
-  </div>
-</section>
-
-<footer>
-  <p>© 2026 Utkarsh Bajpai</p>
-</footer>
+</main>
 
 <script src="./main.js"></script>
 </body>
