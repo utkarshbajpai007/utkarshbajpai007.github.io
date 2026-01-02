@@ -1,85 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Utkarsh Bajpai | People Analytics</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Utkarsh Bajpai | People Analytics</title>
 
-  <!-- Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
 
-  <!-- Icons -->
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
-
-  <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-<!-- ================= NAVBAR ================= -->
+<!-- ===== NAVBAR ===== -->
 <header>
   <nav class="navbar">
     <div class="logo">Utkarsh Bajpai</div>
+
     <ul class="nav-links">
-      <li><a href="#home">Home</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="#services">Services</a></li>
-      <li><a href="#experience">Experience</a></li>
-      <li><a href="#education">Education</a></li>
-      <li><a href="#certificates">Certificates</a></li>
-      <li><a href="#contact">Contact</a></li>
+      <li><a href="#home" class="nav-link active">Home</a></li>
+      <li><a href="#about" class="nav-link">About</a></li>
+      <li><a href="#services" class="nav-link">Services</a></li>
+      <li><a href="#experience" class="nav-link">Experience</a></li>
+      <li><a href="#education" class="nav-link">Education</a></li>
+      <li><a href="#certificates" class="nav-link">Certificates</a></li>
+      <li><a href="#contact" class="nav-link">Contact</a></li>
     </ul>
+
+    <button id="darkToggle" title="Toggle Dark Mode">
+      <i class="fas fa-moon"></i>
+    </button>
   </nav>
 </header>
 
-<!-- ================= HERO ================= -->
+<!-- ===== HERO ===== -->
 <section id="home" class="hero">
-  <div class="hero-content">
+  <div class="hero-content fade-in">
     <img src="profile.png" class="profile-img" alt="Utkarsh Bajpai">
+
     <h1>Hi, I'm Utkarsh Bajpai</h1>
     <h2>People Analytics & Data Analyst</h2>
     <p>Transforming HR & business data into actionable insights.</p>
 
-    <div class="hero-buttons">
-      <a href="resume.pdf" class="btn" download>Download Resume</a>
-      <a href="https://www.linkedin.com" target="_blank" class="icon-btn"><i class="fab fa-linkedin"></i></a>
-      <a href="https://github.com/utkarshbajpai007" target="_blank" class="icon-btn"><i class="fab fa-github"></i></a>
+    <div class="hero-actions">
+      <a href="resume.pdf" download class="btn primary-btn">Download Resume</a>
+
+      <a href="https://www.linkedin.com/in/ub07/" target="_blank" class="social-btn linkedin">
+        <i class="fab fa-linkedin"></i>
+      </a>
+
+      <a href="https://github.com/utkarshbajpai007" target="_blank" class="social-btn github">
+        <i class="fab fa-github"></i>
+      </a>
     </div>
   </div>
 </section>
 
-<!-- ================= ABOUT ================= -->
-<section id="about" class="section">
+<!-- ===== ABOUT ===== -->
+<section id="about" class="section reveal">
   <h2 class="section-title">About Me</h2>
   <p class="section-desc">
     Data-driven professional transitioning from HR IT Recruitment to People Analytics & Data Analytics,
-    with strong expertise in dashboards, workforce metrics, and reporting.
+    with strong expertise in dashboards, workforce metrics, and strategic reporting.
   </p>
 </section>
 
-<!-- ================= SERVICES ================= -->
-<section id="services" class="section gray">
+<!-- ===== SERVICES ===== -->
+<section id="services" class="section gray reveal">
   <h2 class="section-title">Services I Provide</h2>
 
   <div class="card-grid">
-    <div class="card">
+    <div class="card hover-rise">
       <i class="fas fa-users"></i>
       <h3>People Analytics</h3>
       <p>Attrition, hiring trends, workforce insights</p>
     </div>
 
-    <div class="card">
+    <div class="card hover-rise">
       <i class="fas fa-chart-line"></i>
       <h3>Data Analysis</h3>
-      <p>SQL, Python, Excel-based analysis</p>
+      <p>SQL, Python & Excel analysis</p>
     </div>
 
-    <div class="card">
+    <div class="card hover-rise">
       <i class="fas fa-chart-pie"></i>
       <h3>Dashboard Development</h3>
       <p>Power BI & Excel dashboards</p>
     </div>
 
-    <div class="card">
+    <div class="card hover-rise">
       <i class="fas fa-cogs"></i>
       <h3>HR Tech Consulting</h3>
       <p>Recruitment & HR system optimization</p>
@@ -87,67 +97,63 @@
   </div>
 </section>
 
-<!-- ================= EXPERIENCE ================= -->
-<section id="experience" class="section">
+<!-- ===== EXPERIENCE ===== -->
+<section id="experience" class="section reveal">
   <h2 class="section-title">Work Experience</h2>
 
-  <div class="timeline">
-    <div class="timeline-card">
-      <h3>People Analytics Analyst</h3>
-      <span>2023 – Present</span>
-      <ul>
-        <li>Built HR dashboards using Power BI & SQL</li>
-        <li>Automated workforce reports</li>
-        <li>Delivered actionable insights to leadership</li>
-      </ul>
-    </div>
+  <div class="timeline-card hover-rise">
+    <h3>People Analytics Analyst</h3>
+    <span>2023 – Present</span>
+    <ul>
+      <li>Built HR dashboards using Power BI & SQL</li>
+      <li>Automated workforce reporting</li>
+      <li>Delivered actionable insights to leadership</li>
+    </ul>
   </div>
 </section>
 
-<!-- ================= EDUCATION ================= -->
-<section id="education" class="section gray">
+<!-- ===== EDUCATION ===== -->
+<section id="education" class="section gray reveal">
   <h2 class="section-title">Education</h2>
 
-  <div class="card-grid">
-    <div class="card">
-      <h3>Bachelor’s Degree</h3>
-      <p>University Name</p>
-      <span>Year</span>
-    </div>
+  <div class="card hover-rise">
+    <h3>Bachelor’s Degree</h3>
+    <p>University Name</p>
+    <span>Year</span>
   </div>
 </section>
 
-<!-- ================= CERTIFICATES ================= -->
-<section id="certificates" class="section">
+<!-- ===== CERTIFICATES ===== -->
+<section id="certificates" class="section reveal">
   <h2 class="section-title">Certificates</h2>
 
   <div class="card-grid">
-    <a href="cert1.png" target="_blank" class="card">
-      <img src="cert1.png" alt="">
+    <a href="cert1.png" target="_blank" class="card cert-card hover-rise">
+      <img src="cert1.png">
       <p>Google Data Analytics</p>
     </a>
 
-    <a href="cert2.png" target="_blank" class="card">
-      <img src="cert2.png" alt="">
+    <a href="cert2.png" target="_blank" class="card cert-card hover-rise">
+      <img src="cert2.png">
       <p>Power BI Certification</p>
     </a>
 
-    <a href="cert3.png" target="_blank" class="card">
-      <img src="cert3.png" alt="">
+    <a href="cert3.png" target="_blank" class="card cert-card hover-rise">
+      <img src="cert3.png">
       <p>Advanced SQL</p>
     </a>
   </div>
 </section>
 
-<!-- ================= CONTACT ================= -->
-<section id="contact" class="section gray">
+<!-- ===== CONTACT ===== -->
+<section id="contact" class="section gray reveal">
   <h2 class="section-title">Contact Me</h2>
 
   <form class="contact-form">
     <input type="text" placeholder="Your Name" required>
     <input type="email" placeholder="Your Email" required>
-    <textarea placeholder="Your Message" rows="5" required></textarea>
-    <button type="submit" class="btn">Send Message</button>
+    <textarea rows="5" placeholder="Your Message" required></textarea>
+    <button class="btn primary-btn">Send Message</button>
   </form>
 </section>
 
