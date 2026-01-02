@@ -1,33 +1,29 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8">
   <title>Contact | Utkarsh Bajpai</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-<div class="layout">
-  <aside class="sidebar">
-    <div class="profile-box">
-      <img src="profile.jpg">
-      <h2>UTKARSH BAJPAI</h2>
-    </div>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="skills.html">Skills</a>
-      <a href="projects.html">Projects</a>
-      <a class="active" href="contact.html">Contact</a>
-    </nav>
-  </aside>
+<nav class="navbar">...</nav>
 
-  <main class="content fade-in">
-    <h2>Contact</h2>
-    <p>Email: mailtoutkarsh_bajpai@rediffmail.com</p>
-    <p>LinkedIn: linkedin.com/in/ub07</p>
-    <p>GitHub: github.com/utkarshbajpai007</p>
-  </main>
-</div>
+<section class="page">
+  <h1>Contact Me</h1>
+
+  <form class="contact-form"
+        action="https://formspree.io/f/xyzzabcd"
+        method="POST">
+        
+    <input type="text" name="name" placeholder="Your Name" required>
+    <input type="email" name="email" placeholder="Your Email" required>
+    <textarea name="message" placeholder="Your Message" required></textarea>
+    <button type="submit">Send Message</button>
+  </form>
+</section>
+
+<footer>© 2026 Utkarsh Bajpai</footer>
 
 </body>
 </html>
