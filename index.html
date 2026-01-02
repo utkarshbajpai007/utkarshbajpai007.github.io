@@ -12,68 +12,112 @@
 
 <body>
 
-<!-- ========== SIDEBAR ========== -->
+<!-- ================= SIDEBAR ================= -->
 <aside class="sidebar">
   <img src="profile.png" class="profile-img">
   <h2>Utkarsh Bajpai</h2>
   <p>People Analytics<br>Data Analyst</p>
 
+  <div class="social-icons">
+    <a href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin"></i></a>
+    <a href="https://github.com/utkarshbajpai007" target="_blank"><i class="fab fa-github"></i></a>
+  </div>
+
   <nav>
-    <a href="#home"><i class="fa fa-home"></i> Home</a>
-    <a href="#about"><i class="fa fa-user"></i> About Me</a>
-    <a href="#education"><i class="fa fa-graduation-cap"></i> Education</a>
-    <a href="#skills"><i class="fa fa-chart-bar"></i> Skills</a>
-    <a href="#experience"><i class="fa fa-briefcase"></i> Experience</a>
-    <a href="#portfolio"><i class="fa fa-folder-open"></i> Portfolio</a>
-    <a href="#certificates"><i class="fa fa-certificate"></i> Certificates</a>
-    <a href="#contact"><i class="fa fa-envelope"></i> Contact</a>
+    <a href="#home">Home</a>
+    <a href="#about">About Me</a>
+    <a href="#education">Education</a>
+    <a href="#skills">Skills</a>
+    <a href="#experience">Experience</a>
+    <a href="#portfolio">Portfolio</a>
+    <a href="#certificates">Certificates</a>
+    <a href="#contact">Contact</a>
   </nav>
+
+  <a href="resume.pdf" download class="resume-btn">Download Resume</a>
 </aside>
 
-<!-- ========== MAIN CONTENT ========== -->
+<!-- ================= MAIN CONTENT ================= -->
 <main class="content">
 
+<!-- HOME -->
 <section id="home" class="section hero">
   <h1>Hi, I'm <span>Utkarsh Bajpai</span></h1>
   <h3>People Analytics | Data Analyst</h3>
   <p>Transforming HR & business data into actionable insights.</p>
 </section>
 
+<!-- ABOUT -->
 <section id="about" class="section">
   <h2>About Me</h2>
   <p>
     Data-driven professional transitioning from HR IT Recruitment into
-    People Analytics & Data Analytics with strong expertise in dashboards,
-    workforce analytics, and data storytelling.
+    People Analytics & Data Analytics with expertise in workforce metrics,
+    dashboards, and strategic reporting.
   </p>
+
+  <h3 class="sub-title">Services I Provide</h3>
+  <div class="services-grid">
+    <div class="service-card">
+      <i class="fa fa-chart-line"></i>
+      <h4>People Analytics</h4>
+      <p>Attrition, hiring, workforce metrics & insights</p>
+    </div>
+
+    <div class="service-card">
+      <i class="fa fa-database"></i>
+      <h4>Data Analysis</h4>
+      <p>SQL, Python, Excel-based analytics & reporting</p>
+    </div>
+
+    <div class="service-card">
+      <i class="fa fa-chart-pie"></i>
+      <h4>Dashboard Development</h4>
+      <p>Power BI & Excel dashboards</p>
+    </div>
+
+    <div class="service-card">
+      <i class="fa fa-briefcase"></i>
+      <h4>HR Tech Consulting</h4>
+      <p>Recruitment & HR system optimization</p>
+    </div>
+  </div>
 </section>
 
+<!-- EDUCATION -->
+<section id="education" class="section dark">
+  <h2>Education</h2>
+
+  <div class="edu-card">
+    <h3>Bachelor’s Degree</h3>
+    <span>University Name</span>
+    <p>Specialization | Year</p>
+  </div>
+
+  <div class="edu-card">
+    <h3>Certifications</h3>
+    <p>Data Analytics • Power BI • SQL</p>
+  </div>
+</section>
+
+<!-- EXPERIENCE -->
 <section id="experience" class="section dark">
   <h2>Experience</h2>
 
   <div class="experience-card">
     <h3>People Analytics Analyst</h3>
-    <span>HR Tech Organization | 2023 – Present</span>
+    <span>2023 – Present</span>
     <ul>
       <li>Built HR dashboards for attrition & hiring trends</li>
-      <li>Analyzed workforce KPIs using Power BI & SQL</li>
-      <li>Automated reporting workflows</li>
-    </ul>
-  </div>
-
-  <div class="experience-card">
-    <h3>HR IT Recruiter</h3>
-    <span>Staffing Firm | 2021 – 2023</span>
-    <ul>
-      <li>Managed end-to-end IT recruitment</li>
-      <li>Improved hiring funnel efficiency using data insights</li>
+      <li>Automated reporting using Power BI & SQL</li>
+      <li>Improved decision-making with data insights</li>
     </ul>
   </div>
 </section>
 
+<!-- SKILLS -->
 <section id="skills" class="section">
   <h2>Skills & Expertise</h2>
-
   <div class="skills-grid">
     <div class="skill-card">Python</div>
     <div class="skill-card">SQL</div>
@@ -81,30 +125,35 @@
     <div class="skill-card">Excel</div>
     <div class="skill-card">Statistics</div>
     <div class="skill-card">People Analytics</div>
-    <div class="skill-card">EDA</div>
-    <div class="skill-card">HR Dashboards</div>
   </div>
 </section>
 
+<!-- CERTIFICATES -->
 <section id="certificates" class="section">
   <h2>Certificates & Achievements</h2>
 
   <div class="cert-grid">
-    <div class="cert-card">Google Data Analytics</div>
-    <div class="cert-card">Power BI Certification</div>
-    <div class="cert-card">SQL Advanced</div>
+    <a href="cert1.png" target="_blank" class="cert-card">Google Data Analytics</a>
+    <a href="cert2.png" target="_blank" class="cert-card">Power BI Certification</a>
+    <a href="cert3.png" target="_blank" class="cert-card">SQL Advanced</a>
   </div>
 </section>
 
+<!-- CONTACT -->
 <section id="contact" class="section">
-  <h2>Contact</h2>
+  <h2>Contact Me</h2>
+
   <form class="contact-form">
-    <input type="text" placeholder="Name" required>
-    <input type="email" placeholder="Email" required>
-    <textarea placeholder="Message"></textarea>
-    <button>Send</button>
+    <input type="text" placeholder="Your Name" required>
+    <input type="email" placeholder="Your Email" required>
+    <textarea rows="5" placeholder="Your Message"></textarea>
+    <button type="submit">Send Message</button>
   </form>
 </section>
+
+<footer>
+  <p>© 2026 Utkarsh Bajpai</p>
+</footer>
 
 </main>
 
