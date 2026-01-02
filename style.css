@@ -1,0 +1,151 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  display: flex;
+  background: #f4f6fb;
+  color: #222;
+}
+
+/* SIDEBAR */
+.sidebar {
+  width: 260px;
+  background: #1f1f1f;
+  color: white;
+  height: 100vh;
+  padding: 30px 20px;
+  position: fixed;
+}
+
+.profile-img {
+  width: 120px;
+  border-radius: 50%;
+  display: block;
+  margin: 0 auto 15px;
+}
+
+.sidebar h2 {
+  text-align: center;
+}
+
+.role {
+  text-align: center;
+  font-size: 14px;
+  margin-bottom: 25px;
+}
+
+.sidebar nav a {
+  display: block;
+  padding: 12px;
+  color: #ccc;
+  text-decoration: none;
+  border-radius: 6px;
+}
+
+.sidebar nav a:hover {
+  background: #007bff;
+  color: white;
+}
+
+/* MAIN */
+.main {
+  margin-left: 260px;
+  width: calc(100% - 260px);
+}
+
+/* SECTIONS */
+.section {
+  padding: 80px 60px;
+}
+
+.section.dark {
+  background: #2b2b2b;
+  color: white;
+}
+
+.section h2 {
+  margin-bottom: 25px;
+  font-size: 32px;
+}
+
+/* HERO */
+.hero span {
+  color: #007bff;
+}
+
+.buttons {
+  margin-top: 25px;
+}
+
+.btn {
+  padding: 12px 22px;
+  border-radius: 25px;
+  text-decoration: none;
+  margin-right: 10px;
+}
+
+.primary {
+  background: #007bff;
+  color: white;
+}
+
+.outline {
+  border: 2px solid #007bff;
+  color: #007bff;
+}
+
+/* GRID */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 25px;
+}
+
+/* CARDS */
+.card, .portfolio-card {
+  background: white;
+  padding: 30px;
+  border-radius: 15px;
+  text-align: center;
+}
+
+.dark .card {
+  background: #111;
+  color: white;
+}
+
+/* EXPERIENCE */
+.experience {
+  background: black;
+  padding: 35px;
+  border-radius: 20px;
+}
+
+/* CONTACT */
+.contact {
+  max-width: 500px;
+}
+
+.contact input,
+.contact textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+}
+
+.contact button {
+  width: 100%;
+  padding: 12px;
+  background: #007bff;
+  border: none;
+  color: white;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+}
