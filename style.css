@@ -145,3 +145,62 @@ footer {
   text-align: center;
   padding: 30px;
 }
+
+/* ---------- HERO FIX ---------- */
+
+.hero-actions {
+  margin-top: 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.btn-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+/* ---------- ICON BUTTONS ---------- */
+
+.social-icons {
+  display: flex;
+  gap: 16px;
+}
+
+.icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-size: 22px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: var(--card);
+  border: 2px solid var(--accent);
+  transition: transform 0.25s ease, background-color 0.25s ease;
+}
+
+.icon:hover {
+  transform: translateY(-3px) scale(1.05);
+  background-color: var(--accent);
+}
+
+/* LinkedIn Icon */
+.icon.linkedin {
+  background-image: url("https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/linkedin.svg");
+}
+
+/* GitHub Icon */
+.icon.github {
+  background-image: url("https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/github.svg");
+}
+
+/* Fix SVG color */
+.icon {
+  filter: invert(1);
+}
+
+body.dark .icon {
+  filter: invert(0);
+}
+
