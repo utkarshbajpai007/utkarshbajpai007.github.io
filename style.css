@@ -1,1 +1,153 @@
+:root {
+  --bg: #f4f6f9;
+  --text: #111;
+  --card: #fff;
+  --accent: #007bff;
+}
+
+body.dark {
+  --bg: #121212;
+  --text: #eee;
+  --card: #1f1f1f;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: Segoe UI, sans-serif;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  background: var(--bg);
+  color: var(--text);
+  transition: 0.3s;
+}
+
+#themeToggle {
+  position: fixed;
+  top: 15px;
+  right: 20px;
+  z-index: 1000;
+  padding: 8px 12px;
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+}
+
+.sidebar {
+  width: 240px;
+  background: #111;
+  color: #fff;
+  padding: 30px 20px;
+  position: fixed;
+  height: 100vh;
+}
+
+.profile-pic {
+  width: 90px;
+  border-radius: 50%;
+}
+
+.sidebar nav a {
+  display: block;
+  color: #ccc;
+  margin: 12px 0;
+  text-decoration: none;
+}
+
+.sidebar nav a.active {
+  color: var(--accent);
+}
+
+.content {
+  margin-left: 240px;
+  width: calc(100% - 240px);
+}
+
+.section {
+  padding: 80px;
+}
+
+.section.gray {
+  background: #2b2b2b;
+  color: #fff;
+}
+
+.hero span {
+  color: var(--accent);
+}
+
+.btn {
+  padding: 12px 24px;
+  border-radius: 30px;
+  text-decoration: none;
+}
+
+.btn.primary {
+  background: var(--accent);
+  color: #fff;
+}
+
+.btn.outline {
+  border: 2px solid var(--accent);
+  color: var(--accent);
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background: var(--card);
+  padding: 25px;
+  border-radius: 12px;
+  cursor: pointer;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.skills li {
+  display: inline-block;
+  background: var(--accent);
+  color: #fff;
+  padding: 8px 14px;
+  border-radius: 20px;
+  margin: 6px;
+}
+
+/* REVEAL ANIMATION */
+.reveal {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: 0.8s ease;
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* MODAL */
+.modal {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.6);
+}
+
+.modal-content {
+  background: var(--card);
+  padding: 30px;
+  border-radius: 12px;
+  max-width: 500px;
+  margin: 100px auto;
+}
+
+#closeModal {
+  float: right;
+  cursor: pointer;
+  font-size: 22px;
+}
 
