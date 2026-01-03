@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Utkarsh Bajpai | People Analytics</title>
+
+<link rel="stylesheet" href="style.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+</head>
+
+<body>
+
+<!-- DARK MODE TOGGLE (CSS ONLY) -->
+<input type="checkbox" id="theme-toggle" />
+
+<!-- SIDEBAR -->
+<aside class="sidebar">
+  <img src="profile.png" class="profile-pic" />
+  <h2>Utkarsh Bajpai</h2>
+  <p>People Analytics<br>Data Analyst</p>
+
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#about">About Me</a>
+    <a href="#skills">Skills</a>
+    <a href="#services">Services</a>
+    <a href="#experience">Work Experience</a>
+    <a href="#portfolio">Portfolio</a>
+    <a href="#education">Education</a>
+    <a href="#certificates">Certificates</a>
+    <a href="#contact">Contact Me</a>
+  </nav>
+
+  <label for="theme-toggle" class="theme-btn">🌙</label>
+</aside>
+
+<!-- MAIN CONTENT -->
+<main class="content">
+
+<!-- HOME -->
+<section id="home" class="section hero">
+  <h1>Hi, I'm <span>Utkarsh Bajpai</span></h1>
+  <h3>People Analytics | Data Analyst</h3>
+  <p>Turning HR & business data into impactful insights.</p>
+
+  <div class="hero-actions">
+    <a href="#portfolio" class="btn">View Projects</a>
+    <a href="resume.pdf" class="btn outline" download>Download Resume</a>
+  </div>
+
+  <div class="socials">
+    <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
+    <a href="https://github.com" target="_blank"><i class="fab fa-github"></i></a>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="section">
+  <h2>About Me</h2>
+  <p>I specialize in People Analytics, HR dashboards, workforce insights, and automation using Power BI, SQL, Excel, and Python.</p>
+</section>
+
+<!-- SKILLS -->
+<section id="skills" class="section">
+<h2>Skills</h2>
+<div class="skills-grid">
+  <div class="skill-card"><span>Power BI</span><div class="bar"><div style="width:90%"></div></div></div>
+  <div class="skill-card"><span>SQL</span><div class="bar"><div style="width:85%"></div></div></div>
+  <div class="skill-card"><span>Excel (Advanced)</span><div class="bar"><div style="width:92%"></div></div></div>
+  <div class="skill-card"><span>Python</span><div class="bar"><div style="width:75%"></div></div></div>
+  <div class="skill-card"><span>People Analytics</span><div class="bar"><div style="width:88%"></div></div></div>
+</div>
+</section>
+
+<!-- SERVICES -->
+<section id="services" class="section">
+<h2>Services</h2>
+<div class="card-grid">
+  <div class="card">People Analytics Dashboards</div>
+  <div class="card">HR Attrition Analysis</div>
+  <div class="card">Recruitment Analytics</div>
+  <div class="card">Excel Automation</div>
+</div>
+</section>
+
+<!-- EXPERIENCE -->
+<section id="experience" class="section">
+<h2>Work Experience</h2>
+<div class="timeline">
+  <div class="timeline-item">
+    <h3>HR IT Recruiter → People Analytics</h3>
+    <span>2022 – Present</span>
+    <p>Built HR dashboards, attrition analysis, recruitment metrics using Power BI, SQL & Excel.</p>
+  </div>
+</div>
+</section>
+
+<!-- PORTFOLIO -->
+<section id="portfolio" class="section">
+<h2>Portfolio</h2>
+<div class="card-grid">
+  <div class="card modal-open" data-img="cert1.png">People Analytics Dashboard</div>
+  <div class="card modal-open" data-img="cert2.png">HR Attrition Analysis</div>
+  <div class="card modal-open" data-img="cert3.png">Recruitment Metrics</div>
+</div>
+</section>
+
+<!-- EDUCATION -->
+<section id="education" class="section dark">
+<h2>Education</h2>
+<p>Bachelor’s Degree – University Name</p>
+</section>
+
+<!-- CERTIFICATES -->
+<section id="certificates" class="section">
+<h2>Certificates</h2>
+<div class="carousel">
+  <img src="cert1.png">
+  <img src="cert2.png">
+  <img src="cert3.png">
+</div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="section">
+<h2>Contact Me</h2>
+<form action="https://formspree.io/f/xxxxxx" method="POST">
+  <input type="text" name="name" placeholder="Your Name" required>
+  <input type="email" name="email" placeholder="Email" required>
+  <textarea name="message" placeholder="Message"></textarea>
+  <button class="btn">Send Message</button>
+</form>
+</section>
+
+</main>
+
+<!-- MODAL -->
+<div id="modal">
+  <span id="close">&times;</span>
+  <img id="modal-img">
+</div>
+
+<script src="main.js"></script>
+</body>
+</html>
