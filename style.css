@@ -1,0 +1,147 @@
+:root {
+  --bg: #f4f6f9;
+  --text: #111;
+  --card: #fff;
+  --accent: #007bff;
+}
+
+body.dark {
+  --bg: #121212;
+  --text: #eee;
+  --card: #1f1f1f;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+}
+
+#themeToggle {
+  position: fixed;
+  top: 15px;
+  right: 20px;
+  z-index: 999;
+  padding: 8px 12px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.sidebar {
+  width: 240px;
+  position: fixed;
+  height: 100vh;
+  background: #111;
+  color: #fff;
+  padding: 25px;
+}
+
+.sidebar img {
+  width: 90px;
+  border-radius: 50%;
+}
+
+.sidebar nav a {
+  display: block;
+  color: #ccc;
+  text-decoration: none;
+  margin: 12px 0;
+}
+
+.sidebar nav a.active {
+  color: var(--accent);
+}
+
+main {
+  margin-left: 240px;
+  padding: 40px;
+}
+
+.section {
+  margin-bottom: 80px;
+}
+
+.section.light {
+  background: #eceff3;
+  padding: 60px;
+  border-radius: 20px;
+}
+
+.hero h1 span {
+  color: var(--accent);
+}
+
+.btn-group {
+  margin-top: 25px;
+}
+
+.btn {
+  padding: 12px 26px;
+  border-radius: 30px;
+  text-decoration: none;
+  margin-right: 15px;
+}
+
+.btn.primary {
+  background: var(--accent);
+  color: white;
+}
+
+.btn.outline {
+  border: 2px solid var(--accent);
+  color: var(--accent);
+}
+
+.social a {
+  margin-right: 15px;
+  color: var(--accent);
+  font-weight: bold;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 25px;
+}
+
+.card {
+  background: var(--card);
+  padding: 25px;
+  border-radius: 15px;
+}
+
+.tags span {
+  display: inline-block;
+  background: var(--accent);
+  color: white;
+  padding: 8px 14px;
+  margin: 6px;
+  border-radius: 20px;
+}
+
+.cert-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+}
+
+.cert-grid img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+form input, form textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+}
+
+footer {
+  text-align: center;
+  padding: 30px;
+}
