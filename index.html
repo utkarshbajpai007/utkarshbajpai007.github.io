@@ -4,133 +4,87 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Utkarsh Bajpai | Data Analyst</title>
+
 <link rel="stylesheet" href="style.css">
+
+<!-- Google Font -->
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<!-- AOS Animation Library -->
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
 </head>
 
 <body>
 
-<!-- NAVBAR -->
+<div id="particles-js"></div>
+
 <nav>
     <div class="logo">Utkarsh Bajpai</div>
     <ul>
         <li><a href="#about">About</a></li>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#experience">Experience</a></li>
         <li><a href="#projects">Portfolio</a></li>
+        <li><a href="blog.html">Blogs</a></li>
         <li><a href="#contact">Contact</a></li>
+        <li><button id="themeToggle">🌙</button></li>
     </ul>
 </nav>
 
-<!-- HERO -->
 <section class="hero">
-    <div class="hero-left">
-        <h1>Hello, I'm <span>Utkarsh Bajpai</span></h1>
-        <h3>Data Analyst & BI Developer</h3>
-        <p>I turn raw data into strategic business insights.</p>
-        <a href="resume.pdf" class="btn" download>Download Resume</a>
-    </div>
-    <div class="hero-right">
-        <img src="profile.png" alt="Profile">
-    </div>
+    <h1>Hello, I'm <span>Utkarsh Bajpai</span></h1>
+    <h2><span id="typing"></span></h2>
+    <a href="resume.pdf" class="btn" download>Download Resume</a>
 </section>
 
-<!-- ABOUT -->
-<section id="about">
+<section id="about" data-aos="fade-up">
 <h2>About Me</h2>
-<p>
-Detail-oriented Data Analyst with expertise in SQL, Python, Power BI, and Excel.
-Experienced in HR Analytics, Sales Analysis, and Dashboard Development.
-</p>
+<p>Data Analyst specializing in SQL, Python, Power BI & Business Intelligence.</p>
 </section>
 
-<!-- SERVICES -->
-<section id="services">
-<h2>Services</h2>
-<div class="card-container">
-<div class="card">
-<h3>Data Analysis</h3>
-<p>SQL & Python based data exploration and insights generation.</p>
-</div>
-<div class="card">
-<h3>Dashboard Development</h3>
-<p>Interactive Power BI dashboards for decision making.</p>
-</div>
-<div class="card">
-<h3>Business Reporting</h3>
-<p>Automated reporting and KPI tracking solutions.</p>
-</div>
-</div>
-</section>
-
-<!-- EXPERIENCE -->
-<section id="experience">
-<h2>Work Experience</h2>
-<div class="timeline">
-<div class="timeline-item">
-<h3>Data Analyst – Company Name</h3>
-<span>2024 – Present</span>
-<p>Worked on HR analytics dashboards and predictive models.</p>
-</div>
-</div>
-</section>
-
-<!-- EDUCATION -->
-<section>
-<h2>Education</h2>
-<div class="card-container">
-<div class="card">
-<h3>Bachelor's Degree</h3>
-<p>Your University Name</p>
-</div>
-</div>
-</section>
-
-<!-- CERTIFICATIONS -->
-<section>
-<h2>Certifications</h2>
-<div class="card-container">
-<div class="card">Python Certification</div>
-<div class="card">Statistics for Data Science</div>
-<div class="card">SQL Certification</div>
-</div>
-</section>
-
-<!-- PROJECTS -->
-<section id="projects">
+<section id="projects" data-aos="fade-up">
 <h2>Portfolio</h2>
-<div class="card-container">
-<div class="card">
+
+<div class="project-grid">
+
+<div class="project-card">
+<img src="cert1.png">
+<div class="overlay">
 <h3>HR Analytics Dashboard</h3>
-<p>Power BI Dashboard for Attrition Analysis</p>
 </div>
-<div class="card">
+</div>
+
+<div class="project-card">
+<img src="cert2.png">
+<div class="overlay">
 <h3>Sales Data Analysis</h3>
-<p>SQL & Python Business Insights Project</p>
 </div>
+</div>
+
 </div>
 </section>
 
-<!-- BLOG -->
-<section>
-<h2>Blogs</h2>
-<div class="card-container">
-<div class="card">How to Build Power BI Dashboard</div>
-<div class="card">SQL Interview Preparation Guide</div>
-</div>
-</section>
+<section id="contact" data-aos="fade-up">
+<h2>Contact Me</h2>
 
-<!-- CONTACT -->
-<section id="contact">
-<h2>Contact</h2>
-<p>Email: yourmail@email.com</p>
-<p>LinkedIn: linkedin.com/in/yourprofile</p>
+<form action="https://formsubmit.co/YOUR_EMAIL_HERE" method="POST">
+<input type="text" name="name" placeholder="Your Name" required>
+<input type="email" name="email" placeholder="Your Email" required>
+<textarea name="message" placeholder="Your Message" required></textarea>
+<button type="submit" class="btn">Send Message</button>
+</form>
+
 </section>
 
 <footer>
-<p>© 2026 Utkarsh Bajpai | All Rights Reserved</p>
+<p>© 2026 Utkarsh Bajpai</p>
 </footer>
 
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+<script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+<script src="particles.js"></script>
 <script src="main.js"></script>
+
 </body>
 </html>
