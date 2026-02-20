@@ -1,16 +1,34 @@
 // Typing Effect
-var typed = new Typed("#typing", {
-    strings: ["Data Analyst", "BI Developer", "SQL Specialist", "Power BI Expert"],
-    typeSpeed: 60,
-    backSpeed: 40,
-    loop: true
-});
+const text = ["Data Analyst", "Power BI Developer", "SQL Expert"];
+let i = 0;
+let j = 0;
+let current = "";
+let isDeleting = false;
 
-// Dark / Light Toggle
-const toggle = document.getElementById("themeToggle");
-toggle.addEventListener("click", () => {
-    document.body.classList.toggle("light-mode");
-});
+function type() {
+    current = text[i];
+    if (isDeleting) {
+        document.querySelector(".typing").textContent =
+            current.substring(0, j--);
+        if (j == 0) {
+            isDeleting = false;
+            i = (i + 1) % text.length;
+        }
+    } else {
+        document.querySelector(".typing").textContent =
+            current.substring(0, j++);
+        if (j == current.length) {
+            isDeleting = true;
+        }
+    }
+    setTimeout(type, 100);
+}
+type();
 
-// AOS Animation Init
+// Dark Mode Toggle
+document.getElementById("toggleMode").onclick = function(){
+    document.body.classList.toggle("dark-mode");
+};
+
+// AOS Init
 AOS.init();
