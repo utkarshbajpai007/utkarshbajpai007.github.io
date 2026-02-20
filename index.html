@@ -1,162 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Utkarsh Bajpai | People Analytics</title>
-
-  <link rel="stylesheet" href="style.css">
-  <script defer src="main.js"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+    <meta charset="UTF-8">
+    <title>Utkarsh Bajpai | Data Analyst</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-<!-- ========== SIDEBAR ========== -->
-<aside class="sidebar" id="sidebar">
-  <div class="profile">
-    <img src="profile.jpg" alt="Utkarsh Bajpai">
-    <h3>Utkarsh Bajpai</h3>
-    <p>People Analytics</p>
-  </div>
+<nav>
+    <h2>Utkarsh Bajpai</h2>
+    <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
 
-  <nav>
-    <a href="#home" class="active">Home</a>
-    <a href="#about">About</a>
-    <a href="#skills">Skills</a>
-    <a href="#services">Services</a>
-    <a href="#experience">Experience</a>
-    <a href="#portfolio">Portfolio</a>
-    <a href="#education">Education</a>
-    <a href="#certificates">Certificates</a>
-    <a href="#contact">Contact</a>
-  </nav>
-
-  <button class="theme-toggle" id="themeToggle">
-    <i class="fa-solid fa-moon"></i>
-  </button>
-</aside>
-
-<!-- Mobile Toggle -->
-<button class="mobile-toggle" id="mobileToggle">
-  <i class="fa-solid fa-bars"></i>
-</button>
-
-<!-- ========== MAIN CONTENT ========== -->
-<main class="content">
-
-<!-- HERO -->
-<section id="home" class="section hero reveal">
-  <h1>Hi, I'm <span>Utkarsh Bajpai</span></h1>
-  <h2>People Analytics | Data Analyst</h2>
-  <p>Transforming HR & business data into actionable insights.</p>
-
-  <div class="cta">
-    <a href="#portfolio" class="btn primary">View Projects</a>
-    <a href="resume.pdf" class="btn outline">Download Resume</a>
-  </div>
-
-  <div class="socials">
-    <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
-    <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
-  </div>
-</section>
-
-<!-- ABOUT -->
-<section id="about" class="section reveal">
-  <h3>About Me</h3>
-  <p>
-    I specialize in People Analytics, HR dashboards, workforce insights,
-    and automation using Power BI, SQL, Excel, and Python.
-  </p>
-</section>
-
-<!-- SKILLS -->
-<section id="skills" class="section reveal">
-  <h3>Skills</h3>
-  <div class="grid">
-    <div class="card">Power BI</div>
-    <div class="card">SQL</div>
-    <div class="card">Excel (Advanced)</div>
-    <div class="card">Python</div>
-    <div class="card">People Analytics</div>
-  </div>
-</section>
-
-<!-- SERVICES -->
-<section id="services" class="section reveal">
-  <h3>Services</h3>
-  <div class="grid">
-    <div class="card">People Analytics Dashboards</div>
-    <div class="card">HR Attrition Analysis</div>
-    <div class="card">Recruitment Analytics</div>
-    <div class="card">Excel Automation</div>
-  </div>
-</section>
-
-<!-- EXPERIENCE -->
-<section id="experience" class="section reveal">
-  <h3>Work Experience</h3>
-  <div class="card">
-    <strong>HR IT Recruiter – People Analytics</strong>
-    <p>2022 – Present</p>
-    <p>Built HR dashboards, attrition analysis, recruitment metrics.</p>
-  </div>
-</section>
-
-<!-- PORTFOLIO -->
-<section id="portfolio" class="section reveal">
-  <h3>Portfolio</h3>
-  <div class="grid">
-    <div class="card portfolio-item" data-title="People Analytics Dashboard">
-      People Analytics Dashboard
+<section class="hero">
+    <div class="hero-content">
+        <img src="profile.png" class="profile-img">
+        <h1>Hi, I'm Utkarsh Bajpai</h1>
+        <p>Data Analyst | SQL | Python | Power BI</p>
+        <a href="resume.pdf" class="btn" download>Download Resume</a>
     </div>
-    <div class="card portfolio-item" data-title="HR Attrition Analysis">
-      HR Attrition Analysis
+</section>
+
+<section id="about">
+    <h2>About Me</h2>
+    <p>
+        Passionate Data Analyst with strong expertise in SQL, Python, Excel and Power BI.
+        I transform raw data into business insights and build dashboards that drive decisions.
+    </p>
+</section>
+
+<section id="skills">
+    <h2>Skills</h2>
+    <div class="skill-box">
+        <div>SQL</div>
+        <div>Python</div>
+        <div>Power BI</div>
+        <div>Excel</div>
+        <div>Data Visualization</div>
+        <div>Statistics</div>
     </div>
-    <div class="card portfolio-item" data-title="Recruitment Metrics">
-      Recruitment Metrics
+</section>
+
+<section id="projects">
+    <h2>Projects</h2>
+
+    <div class="project-card">
+        <h3>HR Analytics Dashboard</h3>
+        <p>Built Power BI dashboard to analyze employee attrition trends.</p>
     </div>
-  </div>
+
+    <div class="project-card">
+        <h3>Sales Data Analysis</h3>
+        <p>Performed SQL & Python based sales analysis to extract insights.</p>
+    </div>
+
 </section>
 
-<!-- EDUCATION -->
-<section id="education" class="section reveal">
-  <h3>Education</h3>
-  <div class="card">Bachelor’s Degree – University Name</div>
+<section id="contact">
+    <h2>Contact</h2>
+    <p>Email: yourmail@email.com</p>
+    <p>LinkedIn: https://linkedin.com/in/yourprofile</p>
 </section>
 
-<!-- CERTIFICATES -->
-<section id="certificates" class="section reveal">
-  <h3>Certificates</h3>
-  <div class="grid">
-    <img src="cert1.png" alt="Certificate">
-    <img src="cert2.png" alt="Certificate">
-    <img src="cert3.png" alt="Certificate">
-  </div>
-</section>
-
-<!-- CONTACT -->
-<section id="contact" class="section reveal">
-  <h3>Contact Me</h3>
-  <form action="https://formspree.io/f/xxxxxxx" method="POST">
-    <input type="text" name="name" placeholder="Your Name" required>
-    <input type="email" name="email" placeholder="Email" required>
-    <textarea name="message" placeholder="Message" required></textarea>
-    <button class="btn primary">Send Message</button>
-  </form>
-</section>
-
-</main>
-
-<!-- MODAL -->
-<div class="modal" id="modal">
-  <div class="modal-content">
-    <span class="close">&times;</span>
-    <h3 id="modalTitle"></h3>
-    <p>Project details and screenshots carousel here.</p>
-  </div>
-</div>
+<footer>
+    <p>© 2026 Utkarsh Bajpai</p>
+</footer>
 
 </body>
 </html>
