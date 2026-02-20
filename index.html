@@ -1,171 +1,200 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Utkarsh Bajpai | Portfolio</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Utkarsh Bajpai | Data Analyst</title>
 
-    <!-- Google Font -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 
-    <!-- Your CSS -->
-    <link rel="stylesheet" href="style.css">
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif}
+body{background:#0e1a22;color:#fff;line-height:1.6}
+section{padding:100px 10%}
+h2{font-size:32px;margin-bottom:40px;border-left:5px solid #00f5ff;padding-left:15px}
+
+/* NAVBAR */
+nav{
+position:fixed;width:100%;top:0;
+background:rgba(15,32,39,0.95);
+display:flex;justify-content:space-between;
+align-items:center;padding:15px 10%;
+z-index:1000
+}
+nav h1{color:#00f5ff;font-weight:700}
+nav ul{display:flex;gap:25px;list-style:none}
+nav ul li a{text-decoration:none;color:#fff;font-size:14px}
+nav ul li a:hover{color:#00f5ff}
+
+/* HERO */
+#home{
+height:100vh;
+display:flex;
+align-items:center;
+justify-content:space-between;
+padding-top:120px
+}
+.hero-left{max-width:600px}
+.hero-left h1{font-size:48px;margin-bottom:15px}
+.hero-left span{color:#00f5ff}
+.hero-left p{margin-bottom:25px;color:#bbb}
+.hero-left button{
+padding:12px 28px;border:none;
+background:#00f5ff;color:#000;
+border-radius:30px;font-weight:600;
+cursor:pointer
+}
+.hero-right img{
+width:320px;height:320px;
+border-radius:50%;
+object-fit:cover;
+border:5px solid #00f5ff
+}
+
+/* CARD STYLE */
+.card{
+background:#13252f;
+padding:25px;
+border-radius:12px;
+margin-bottom:20px;
+transition:0.3s
+}
+.card:hover{transform:translateY(-5px)}
+
+/* GRID */
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:25px
+}
+
+/* FOOTER */
+footer{text-align:center;padding:40px;background:#091318}
+</style>
 </head>
 
 <body>
 
-<!-- ================= NAVBAR ================= -->
 <nav>
-    <h1>Utkarsh</h1>
-    <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#education">Education</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#experience">Experience</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#portfolio">Portfolio</a></li>
-      <li><a href="#certificates">Certificates</a></li>
-        <li><a href="#blogs">Blogs</a></li>
-        <li><a href="#contact">Contact</a></li>
-    </ul>
+<h1>Utkarsh</h1>
+<ul>
+<li><a href="#home">Home</a></li>
+<li><a href="#about">About</a></li>
+<li><a href="#services">Services</a></li>
+<li><a href="#education">Education</a></li>
+<li><a href="#skills">Skills</a></li>
+<li><a href="#experience">Experience</a></li>
+<li><a href="#projects">Projects</a></li>
+<li><a href="#portfolio">Portfolio</a></li>
+<li><a href="#certificates">Certificates</a></li>
+<li><a href="#blogs">Blogs</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
 </nav>
 
-<!-- ================= HOME ================= -->
-<section id="home" class="hero fade-in">
-    <div class="hero-content">
-        <h2>Hi, I'm Utkarsh Bajpai</h2>
-        <p>Data Analyst | Business Intelligence | SQL | Power BI | Python</p>
-        <button class="btn">Download Resume</button>
-    </div>
+<!-- HOME -->
+<section id="home">
+<div class="hero-left">
+<h1>Hello, I'm <span>Utkarsh Bajpai</span></h1>
+<p>Data Analyst skilled in SQL, Power BI, Excel & Python. Transforming raw data into meaningful business insights.</p>
+<button>Download Resume</button>
+</div>
+<div class="hero-right">
+<img src="https://via.placeholder.com/400" alt="Profile Photo">
+</div>
 </section>
 
-<!-- ================= ABOUT ================= -->
-<section id="about" class="card fade-in" style="margin:100px 8%;">
-    <h2>About Me</h2>
-    <p>
-        I am a passionate Data Analyst focused on transforming raw data into meaningful business insights.
-        Skilled in SQL, Excel, Power BI, and Python with a strong analytical mindset and problem-solving ability.
-    </p>
+<!-- ABOUT -->
+<section id="about">
+<h2>About Me</h2>
+<div class="card">
+I am a passionate data analyst focused on delivering actionable insights. Strong in analytics, dashboards, automation, and reporting.
+</div>
 </section>
 
-<!-- ================= SERVICES ================= -->
-<section id="services" style="padding:100px 8%;">
-    <h2>Services</h2>
-    <div class="card fade-in">
-        <h3>Data Analysis</h3>
-        <p>Advanced SQL queries, data cleaning, and analysis.</p>
-    </div>
-    <div class="card fade-in">
-        <h3>Dashboard Development</h3>
-        <p>Interactive dashboards using Power BI & Excel.</p>
-    </div>
-    <div class="card fade-in">
-        <h3>Business Insights</h3>
-        <p>Turning complex data into strategic business decisions.</p>
-    </div>
+<!-- SERVICES -->
+<section id="services">
+<h2>Services</h2>
+<div class="grid">
+<div class="card"><h3>Data Analysis</h3><p>Advanced SQL, cleaning & transformation.</p></div>
+<div class="card"><h3>Dashboard Development</h3><p>Interactive Power BI dashboards.</p></div>
+<div class="card"><h3>Business Insights</h3><p>Strategic reporting & automation.</p></div>
+</div>
 </section>
 
-<!-- ================= EDUCATION ================= -->
-<section id="education" style="padding:100px 8%;">
-    <h2>Education</h2>
-    <div class="card fade-in">
-        <h3>Bachelor’s Degree</h3>
-        <p>Your University Name | Year</p>
-    </div>
+<!-- EDUCATION -->
+<section id="education">
+<h2>Education</h2>
+<div class="card">
+Bachelor’s Degree – University Name (Year)
+</div>
 </section>
 
-<!-- ================= SKILLS ================= -->
-<section id="skills" style="padding:100px 8%;">
-    <h2>Skills</h2>
-    <div class="card fade-in">
-        <p>SQL</p>
-        <p>Excel</p>
-        <p>Power BI</p>
-        <p>Python</p>
-        <p>Statistics</p>
-    </div>
+<!-- SKILLS -->
+<section id="skills">
+<h2>Skills</h2>
+<div class="grid">
+<div class="card">SQL</div>
+<div class="card">Excel</div>
+<div class="card">Power BI</div>
+<div class="card">Python</div>
+<div class="card">Statistics</div>
+</div>
 </section>
 
-<!-- ================= WORK EXPERIENCE ================= -->
-<section id="experience" style="padding:100px 8%;">
-    <h2>Work Experience</h2>
-    <div class="card fade-in">
-        <h3>Data Analyst</h3>
-        <p>Company Name | Duration</p>
-        <p>Worked on dashboards, SQL analysis, and reporting automation.</p>
-    </div>
+<!-- EXPERIENCE -->
+<section id="experience">
+<h2>Work Experience</h2>
+<div class="card">
+<h3>Data Analyst – Company Name</h3>
+<p>Created dashboards, automated reports & performed deep SQL analysis.</p>
+</div>
 </section>
 
-<!-- ================= PROJECTS ================= -->
-<section id="projects" style="padding:100px 8%;">
-    <h2>Projects</h2>
-    <div class="card fade-in">
-        <h3>Sales Dashboard</h3>
-        <p>Developed interactive Power BI dashboard for sales performance tracking.</p>
-    </div>
-    <div class="card fade-in">
-        <h3>SQL Data Cleaning</h3>
-        <p>Performed data cleaning and transformation on large datasets.</p>
-    </div>
+<!-- PROJECTS -->
+<section id="projects">
+<h2>Projects</h2>
+<div class="grid">
+<div class="card"><h3>Sales Dashboard</h3><p>Power BI interactive dashboard.</p></div>
+<div class="card"><h3>SQL Data Cleaning</h3><p>Large dataset transformation project.</p></div>
+</div>
 </section>
 
-<!-- ================= PORTFOLIO ================= -->
-<section id="portfolio" style="padding:100px 8%;">
-    <h2>Portfolio</h2>
-    <div class="card fade-in">
-        <p>Add screenshots of your dashboards or project visuals here.</p>
-    </div>
+<!-- PORTFOLIO -->
+<section id="portfolio">
+<h2>Portfolio</h2>
+<div class="card">Add project screenshots here.</div>
 </section>
 
-  <!-- ================= CERTIFICATES & AWARDS ================= -->
-<section id="certificates" style="padding:100px 8%;">
-    <h2>Certificates & Awards</h2>
-
-    <div class="card fade-in">
-        <h3>📜 Data Analytics Certification</h3>
-        <p>Issued by: Coursera / Udemy / XYZ Institute</p>
-        <p>Completed advanced SQL, Python, and Power BI training.</p>
-    </div>
-
-    <div class="card fade-in" style="margin-top:30px;">
-        <h3>🏆 Best Performer Award</h3>
-        <p>Organization: Company Name</p>
-        <p>Recognized for outstanding analytical reporting and dashboard development.</p>
-    </div>
-
-    <div class="card fade-in" style="margin-top:30px;">
-        <h3>🎖️ Academic Excellence Award</h3>
-        <p>University Name</p>
-        <p>Awarded for high academic performance and research contribution.</p>
-    </div>
+<!-- CERTIFICATES -->
+<section id="certificates">
+<h2>Certificates & Awards</h2>
+<div class="grid">
+<div class="card">Data Analytics Certification</div>
+<div class="card">Best Performer Award</div>
+<div class="card">Academic Excellence</div>
+</div>
 </section>
 
-<!-- ================= BLOGS ================= -->
-<section id="blogs" style="padding:100px 8%;">
-    <h2>Blogs</h2>
-    <div class="card fade-in">
-        <h3>Understanding SQL Joins</h3>
-        <p>A beginner-friendly guide explaining SQL joins with examples.</p>
-    </div>
+<!-- BLOGS -->
+<section id="blogs">
+<h2>Blogs</h2>
+<div class="card">Understanding SQL Joins – Beginner Guide</div>
 </section>
 
-<!-- ================= CONTACT ================= -->
-<section id="contact" style="padding:100px 8%;">
-    <h2>Contact</h2>
-    <div class="card fade-in">
-        <p>Email: yourmail@email.com</p>
-        <p>LinkedIn: linkedin.com/in/yourprofile</p>
-        <p>GitHub: github.com/yourprofile</p>
-    </div>
+<!-- CONTACT -->
+<section id="contact">
+<h2>Contact</h2>
+<div class="card">
+Email: yourmail@email.com <br>
+LinkedIn: linkedin.com/in/yourprofile <br>
+GitHub: github.com/yourprofile
+</div>
 </section>
 
-<footer style="text-align:center; padding:30px;">
-    © 2026 Utkarsh Bajpai | Elite Portfolio
+<footer>
+© 2026 Utkarsh Bajpai | Professional Portfolio
 </footer>
-
-<script src="main.js"></script>
 
 </body>
 </html>
