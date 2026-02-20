@@ -3,87 +3,109 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Utkarsh Bajpai | Data Analyst</title>
+<title>Rocko | Portfolio</title>
 
 <link rel="stylesheet" href="style.css">
 
-<!-- Google Font -->
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-
-<!-- AOS Animation Library -->
+<!-- AOS Scroll Animation -->
 <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
 </head>
-
 <body>
 
+<!-- Particle Background -->
 <div id="particles-js"></div>
 
+<!-- Navigation -->
 <nav>
-    <div class="logo">Utkarsh Bajpai</div>
+    <h2 class="logo">Rocko</h2>
     <ul>
         <li><a href="#about">About</a></li>
-        <li><a href="#projects">Portfolio</a></li>
-        <li><a href="blog.html">Blogs</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#certifications">Certifications</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="blog.html">Blog</a></li>
         <li><a href="#contact">Contact</a></li>
-        <li><button id="themeToggle">🌙</button></li>
     </ul>
+    <button id="toggleMode">🌙</button>
 </nav>
 
+<!-- Hero Section -->
 <section class="hero">
-    <h1>Hello, I'm <span>Utkarsh Bajpai</span></h1>
-    <h2><span id="typing"></span></h2>
-    <a href="resume.pdf" class="btn" download>Download Resume</a>
+    <img src="profile.png" class="profile">
+    <h1>I am <span class="typing"></span></h1>
+    <a href="resume.pdf" class="btn">Download Resume</a>
 </section>
 
+<!-- About -->
 <section id="about" data-aos="fade-up">
-<h2>About Me</h2>
-<p>Data Analyst specializing in SQL, Python, Power BI & Business Intelligence.</p>
+    <h2>About Me</h2>
+    <p>Passionate Data Analyst skilled in SQL, Python, Power BI and Excel.</p>
 </section>
 
-<section id="projects" data-aos="fade-up">
-<h2>Portfolio</h2>
-
-<div class="project-grid">
-
-<div class="project-card">
-<img src="cert1.png">
-<div class="overlay">
-<h3>HR Analytics Dashboard</h3>
-</div>
-</div>
-
-<div class="project-card">
-<img src="cert2.png">
-<div class="overlay">
-<h3>Sales Data Analysis</h3>
-</div>
-</div>
-
-</div>
+<!-- Services -->
+<section id="services" data-aos="fade-up">
+    <h2>Services</h2>
+    <div class="card-container">
+        <div class="card">Data Analysis</div>
+        <div class="card">Dashboard Design</div>
+        <div class="card">Automation</div>
+    </div>
 </section>
 
+<!-- Portfolio -->
+<section id="portfolio" data-aos="fade-up">
+    <h2>Projects</h2>
+    <div class="project-container">
+        <div class="project">
+            <img src="profile.png">
+            <div class="overlay">SQL Project</div>
+        </div>
+        <div class="project">
+            <img src="profile.png">
+            <div class="overlay">Power BI Dashboard</div>
+        </div>
+    </div>
+</section>
+
+<!-- Certifications -->
+<section id="certifications" data-aos="fade-up">
+    <h2>Certifications</h2>
+    <div class="cert-container">
+        <img src="cert1.png">
+        <img src="cert2.png">
+        <img src="cert3.png">
+    </div>
+</section>
+
+<!-- Education -->
+<section id="education" data-aos="fade-up">
+    <h2>Education</h2>
+    <p>Bachelor's Degree in Computer Science</p>
+</section>
+
+<!-- Experience -->
+<section id="experience" data-aos="fade-up">
+    <h2>Work Experience</h2>
+    <p>Data Analyst Intern - Company Name</p>
+</section>
+
+<!-- Contact -->
 <section id="contact" data-aos="fade-up">
-<h2>Contact Me</h2>
-
-<form action="https://formsubmit.co/YOUR_EMAIL_HERE" method="POST">
-<input type="text" name="name" placeholder="Your Name" required>
-<input type="email" name="email" placeholder="Your Email" required>
-<textarea name="message" placeholder="Your Message" required></textarea>
-<button type="submit" class="btn">Send Message</button>
-</form>
-
+    <h2>Contact Me</h2>
+    <form action="https://formspree.io/f/yourID" method="POST">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" placeholder="Message"></textarea>
+        <button type="submit">Send</button>
+    </form>
 </section>
 
-<footer>
-<p>© 2026 Utkarsh Bajpai</p>
-</footer>
-
-<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-<script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-
+<!-- Scripts -->
 <script src="particles.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script src="main.js"></script>
 
 </body>
