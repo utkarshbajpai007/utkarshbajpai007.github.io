@@ -1,211 +1,171 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Elite Premium UI</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>Utkarsh Bajpai | Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- Google Font -->
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: 'Poppins', sans-serif;
-    }
-
-    body {
-      background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
-      color: white;
-      overflow-x: hidden;
-    }
-
-    /* NAVBAR */
-    nav {
-      position: fixed;
-      width: 100%;
-      padding: 20px 10%;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      backdrop-filter: blur(20px);
-      background: rgba(255, 255, 255, 0.05);
-      border-bottom: 1px solid rgba(255,255,255,0.1);
-      z-index: 1000;
-    }
-
-    nav h1 {
-      font-size: 24px;
-      font-weight: 700;
-      background: linear-gradient(45deg, #00f5ff, #ff00c8);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-    }
-
-    nav ul {
-      display: flex;
-      list-style: none;
-      gap: 30px;
-    }
-
-    nav ul li a {
-      text-decoration: none;
-      color: white;
-      font-weight: 500;
-      transition: 0.3s;
-    }
-
-    nav ul li a:hover {
-      color: #00f5ff;
-    }
-
-    /* HERO SECTION */
-    .hero {
-      height: 100vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      padding: 0 10%;
-    }
-
-    .hero-content {
-      max-width: 800px;
-      animation: fadeIn 1.5s ease-in-out;
-    }
-
-    .hero h2 {
-      font-size: 55px;
-      font-weight: 700;
-      background: linear-gradient(45deg, #00f5ff, #ff00c8);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-    }
-
-    .hero p {
-      margin-top: 20px;
-      font-size: 18px;
-      opacity: 0.8;
-    }
-
-    .btn {
-      margin-top: 30px;
-      padding: 14px 35px;
-      border-radius: 50px;
-      border: none;
-      font-size: 16px;
-      cursor: pointer;
-      background: linear-gradient(45deg, #00f5ff, #ff00c8);
-      color: white;
-      transition: 0.4s;
-      box-shadow: 0 10px 30px rgba(0, 245, 255, 0.4);
-    }
-
-    .btn:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 15px 40px rgba(255, 0, 200, 0.6);
-    }
-
-    /* CARDS SECTION */
-    .features {
-      padding: 100px 10%;
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 30px;
-    }
-
-    .card {
-      padding: 30px;
-      border-radius: 20px;
-      background: rgba(255, 255, 255, 0.05);
-      backdrop-filter: blur(15px);
-      border: 1px solid rgba(255,255,255,0.1);
-      transition: 0.4s;
-    }
-
-    .card:hover {
-      transform: translateY(-10px);
-      background: rgba(255, 255, 255, 0.1);
-    }
-
-    .card h3 {
-      margin-bottom: 15px;
-      font-size: 22px;
-      color: #00f5ff;
-    }
-
-    /* FOOTER */
-    footer {
-      text-align: center;
-      padding: 30px;
-      background: rgba(255, 255, 255, 0.05);
-      border-top: 1px solid rgba(255,255,255,0.1);
-    }
-
-    /* ANIMATION */
-    @keyframes fadeIn {
-      from {
-        opacity: 0;
-        transform: translateY(20px);
-      }
-      to {
-        opacity: 1;
-        transform: translateY(0);
-      }
-    }
-
-    /* SCROLLBAR */
-    ::-webkit-scrollbar {
-      width: 8px;
-    }
-    ::-webkit-scrollbar-thumb {
-      background: linear-gradient(#00f5ff, #ff00c8);
-      border-radius: 10px;
-    }
-
-  </style>
+    <!-- Your CSS -->
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-  <nav>
-    <h1>EliteUI</h1>
+<!-- ================= NAVBAR ================= -->
+<nav>
+    <h1>Utkarsh</h1>
     <ul>
-      <li><a href="#">Home</a></li>
-      <li><a href="#">Features</a></li>
-      <li><a href="#">Pricing</a></li>
-      <li><a href="#">Contact</a></li>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+      <li><a href="#certificates">Certificates</a></li>
+        <li><a href="#blogs">Blogs</a></li>
+        <li><a href="#contact">Contact</a></li>
     </ul>
-  </nav>
+</nav>
 
-  <section class="hero">
+<!-- ================= HOME ================= -->
+<section id="home" class="hero fade-in">
     <div class="hero-content">
-      <h2>Elite Premium Experience</h2>
-      <p>Ultra-modern glassmorphism design with smooth animations and gradient aesthetics. Designed for next-generation websites.</p>
-      <button class="btn">Get Started</button>
+        <h2>Hi, I'm Utkarsh Bajpai</h2>
+        <p>Data Analyst | Business Intelligence | SQL | Power BI | Python</p>
+        <button class="btn">Download Resume</button>
     </div>
-  </section>
+</section>
 
-  <section class="features">
-    <div class="card">
-      <h3>⚡ Lightning Fast</h3>
-      <p>Optimized for performance and speed with clean and minimal code structure.</p>
-    </div>
-    <div class="card">
-      <h3>🎨 Modern Design</h3>
-      <p>Glass UI, gradients, smooth transitions and premium visual effects.</p>
-    </div>
-    <div class="card">
-      <h3>🔒 Secure & Reliable</h3>
-      <p>Built with best practices ensuring security and stability.</p>
-    </div>
-  </section>
+<!-- ================= ABOUT ================= -->
+<section id="about" class="card fade-in" style="margin:100px 8%;">
+    <h2>About Me</h2>
+    <p>
+        I am a passionate Data Analyst focused on transforming raw data into meaningful business insights.
+        Skilled in SQL, Excel, Power BI, and Python with a strong analytical mindset and problem-solving ability.
+    </p>
+</section>
 
-  <footer>
-    © 2026 Elite Premium UI | Designed with Excellence
-  </footer>
+<!-- ================= SERVICES ================= -->
+<section id="services" style="padding:100px 8%;">
+    <h2>Services</h2>
+    <div class="card fade-in">
+        <h3>Data Analysis</h3>
+        <p>Advanced SQL queries, data cleaning, and analysis.</p>
+    </div>
+    <div class="card fade-in">
+        <h3>Dashboard Development</h3>
+        <p>Interactive dashboards using Power BI & Excel.</p>
+    </div>
+    <div class="card fade-in">
+        <h3>Business Insights</h3>
+        <p>Turning complex data into strategic business decisions.</p>
+    </div>
+</section>
+
+<!-- ================= EDUCATION ================= -->
+<section id="education" style="padding:100px 8%;">
+    <h2>Education</h2>
+    <div class="card fade-in">
+        <h3>Bachelor’s Degree</h3>
+        <p>Your University Name | Year</p>
+    </div>
+</section>
+
+<!-- ================= SKILLS ================= -->
+<section id="skills" style="padding:100px 8%;">
+    <h2>Skills</h2>
+    <div class="card fade-in">
+        <p>SQL</p>
+        <p>Excel</p>
+        <p>Power BI</p>
+        <p>Python</p>
+        <p>Statistics</p>
+    </div>
+</section>
+
+<!-- ================= WORK EXPERIENCE ================= -->
+<section id="experience" style="padding:100px 8%;">
+    <h2>Work Experience</h2>
+    <div class="card fade-in">
+        <h3>Data Analyst</h3>
+        <p>Company Name | Duration</p>
+        <p>Worked on dashboards, SQL analysis, and reporting automation.</p>
+    </div>
+</section>
+
+<!-- ================= PROJECTS ================= -->
+<section id="projects" style="padding:100px 8%;">
+    <h2>Projects</h2>
+    <div class="card fade-in">
+        <h3>Sales Dashboard</h3>
+        <p>Developed interactive Power BI dashboard for sales performance tracking.</p>
+    </div>
+    <div class="card fade-in">
+        <h3>SQL Data Cleaning</h3>
+        <p>Performed data cleaning and transformation on large datasets.</p>
+    </div>
+</section>
+
+<!-- ================= PORTFOLIO ================= -->
+<section id="portfolio" style="padding:100px 8%;">
+    <h2>Portfolio</h2>
+    <div class="card fade-in">
+        <p>Add screenshots of your dashboards or project visuals here.</p>
+    </div>
+</section>
+
+  <!-- ================= CERTIFICATES & AWARDS ================= -->
+<section id="certificates" style="padding:100px 8%;">
+    <h2>Certificates & Awards</h2>
+
+    <div class="card fade-in">
+        <h3>📜 Data Analytics Certification</h3>
+        <p>Issued by: Coursera / Udemy / XYZ Institute</p>
+        <p>Completed advanced SQL, Python, and Power BI training.</p>
+    </div>
+
+    <div class="card fade-in" style="margin-top:30px;">
+        <h3>🏆 Best Performer Award</h3>
+        <p>Organization: Company Name</p>
+        <p>Recognized for outstanding analytical reporting and dashboard development.</p>
+    </div>
+
+    <div class="card fade-in" style="margin-top:30px;">
+        <h3>🎖️ Academic Excellence Award</h3>
+        <p>University Name</p>
+        <p>Awarded for high academic performance and research contribution.</p>
+    </div>
+</section>
+
+<!-- ================= BLOGS ================= -->
+<section id="blogs" style="padding:100px 8%;">
+    <h2>Blogs</h2>
+    <div class="card fade-in">
+        <h3>Understanding SQL Joins</h3>
+        <p>A beginner-friendly guide explaining SQL joins with examples.</p>
+    </div>
+</section>
+
+<!-- ================= CONTACT ================= -->
+<section id="contact" style="padding:100px 8%;">
+    <h2>Contact</h2>
+    <div class="card fade-in">
+        <p>Email: yourmail@email.com</p>
+        <p>LinkedIn: linkedin.com/in/yourprofile</p>
+        <p>GitHub: github.com/yourprofile</p>
+    </div>
+</section>
+
+<footer style="text-align:center; padding:30px;">
+    © 2026 Utkarsh Bajpai | Elite Portfolio
+</footer>
+
+<script src="main.js"></script>
 
 </body>
 </html>
