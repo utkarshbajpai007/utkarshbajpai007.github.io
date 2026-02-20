@@ -1,99 +1,211 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Utkarsh Bajpai | Portfolio</title>
+  <meta charset="UTF-8">
+  <title>Elite Premium UI</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<link rel="stylesheet" href="style.css">
-<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+      color: white;
+      overflow-x: hidden;
+    }
+
+    /* NAVBAR */
+    nav {
+      position: fixed;
+      width: 100%;
+      padding: 20px 10%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      backdrop-filter: blur(20px);
+      background: rgba(255, 255, 255, 0.05);
+      border-bottom: 1px solid rgba(255,255,255,0.1);
+      z-index: 1000;
+    }
+
+    nav h1 {
+      font-size: 24px;
+      font-weight: 700;
+      background: linear-gradient(45deg, #00f5ff, #ff00c8);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    nav ul {
+      display: flex;
+      list-style: none;
+      gap: 30px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: white;
+      font-weight: 500;
+      transition: 0.3s;
+    }
+
+    nav ul li a:hover {
+      color: #00f5ff;
+    }
+
+    /* HERO SECTION */
+    .hero {
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 0 10%;
+    }
+
+    .hero-content {
+      max-width: 800px;
+      animation: fadeIn 1.5s ease-in-out;
+    }
+
+    .hero h2 {
+      font-size: 55px;
+      font-weight: 700;
+      background: linear-gradient(45deg, #00f5ff, #ff00c8);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .hero p {
+      margin-top: 20px;
+      font-size: 18px;
+      opacity: 0.8;
+    }
+
+    .btn {
+      margin-top: 30px;
+      padding: 14px 35px;
+      border-radius: 50px;
+      border: none;
+      font-size: 16px;
+      cursor: pointer;
+      background: linear-gradient(45deg, #00f5ff, #ff00c8);
+      color: white;
+      transition: 0.4s;
+      box-shadow: 0 10px 30px rgba(0, 245, 255, 0.4);
+    }
+
+    .btn:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 15px 40px rgba(255, 0, 200, 0.6);
+    }
+
+    /* CARDS SECTION */
+    .features {
+      padding: 100px 10%;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+    }
+
+    .card {
+      padding: 30px;
+      border-radius: 20px;
+      background: rgba(255, 255, 255, 0.05);
+      backdrop-filter: blur(15px);
+      border: 1px solid rgba(255,255,255,0.1);
+      transition: 0.4s;
+    }
+
+    .card:hover {
+      transform: translateY(-10px);
+      background: rgba(255, 255, 255, 0.1);
+    }
+
+    .card h3 {
+      margin-bottom: 15px;
+      font-size: 22px;
+      color: #00f5ff;
+    }
+
+    /* FOOTER */
+    footer {
+      text-align: center;
+      padding: 30px;
+      background: rgba(255, 255, 255, 0.05);
+      border-top: 1px solid rgba(255,255,255,0.1);
+    }
+
+    /* ANIMATION */
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    /* SCROLLBAR */
+    ::-webkit-scrollbar {
+      width: 8px;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: linear-gradient(#00f5ff, #ff00c8);
+      border-radius: 10px;
+    }
+
+  </style>
 </head>
 
 <body>
 
-<div id="particles-js"></div>
-
-<nav>
-    <h2 class="logo">Utkarsh Bajpai</h2>
+  <nav>
+    <h1>EliteUI</h1>
     <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#portfolio">Projects</a></li>
-        <li><a href="#certifications">Certifications</a></li>
-        <li><a href="#education">Education</a></li>
-        <li><a href="#experience">Experience</a></li>
-        <li><a href="blog.html">Blog</a></li>
-        <li><a href="#contact">Contact</a></li>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Features</a></li>
+      <li><a href="#">Pricing</a></li>
+      <li><a href="#">Contact</a></li>
     </ul>
-    <button id="toggleMode">🌙</button>
-</nav>
+  </nav>
 
-<section class="hero">
-    <img src="profile.png" class="profile">
-    <h1>I am <span class="typing"></span></h1>
-    <a href="resume.pdf" class="btn" target="_blank">Download Resume</a>
-</section>
-
-<section id="about" data-aos="fade-up">
-    <h2>About Me</h2>
-    <p>Passionate Data Analyst skilled in SQL, Python, Power BI and Excel.</p>
-</section>
-
-<section id="services" data-aos="fade-up">
-    <h2>Services</h2>
-    <div class="card-container">
-        <div class="card">Data Analysis</div>
-        <div class="card">Dashboard Development</div>
-        <div class="card">Automation Solutions</div>
+  <section class="hero">
+    <div class="hero-content">
+      <h2>Elite Premium Experience</h2>
+      <p>Ultra-modern glassmorphism design with smooth animations and gradient aesthetics. Designed for next-generation websites.</p>
+      <button class="btn">Get Started</button>
     </div>
-</section>
+  </section>
 
-<section id="portfolio" data-aos="fade-up">
-    <h2>Projects</h2>
-    <div class="project-container">
-        <div class="project">
-            <img src="profile.png">
-            <div class="overlay">SQL Project</div>
-        </div>
-        <div class="project">
-            <img src="profile.png">
-            <div class="overlay">Power BI Dashboard</div>
-        </div>
+  <section class="features">
+    <div class="card">
+      <h3>⚡ Lightning Fast</h3>
+      <p>Optimized for performance and speed with clean and minimal code structure.</p>
     </div>
-</section>
-
-<section id="certifications" data-aos="fade-up">
-    <h2>Certifications</h2>
-    <div class="cert-container">
-        <img src="cert1.png">
-        <img src="cert2.png">
-        <img src="cert3.png">
+    <div class="card">
+      <h3>🎨 Modern Design</h3>
+      <p>Glass UI, gradients, smooth transitions and premium visual effects.</p>
     </div>
-</section>
+    <div class="card">
+      <h3>🔒 Secure & Reliable</h3>
+      <p>Built with best practices ensuring security and stability.</p>
+    </div>
+  </section>
 
-<section id="education" data-aos="fade-up">
-    <h2>Education</h2>
-    <p>Bachelor's Degree in Computer Science</p>
-</section>
-
-<section id="experience" data-aos="fade-up">
-    <h2>Work Experience</h2>
-    <p>Data Analyst Intern</p>
-</section>
-
-<section id="contact" data-aos="fade-up">
-    <h2>Contact Me</h2>
-    <form action="https://formspree.io/f/yourID" method="POST">
-        <input type="text" name="name" placeholder="Your Name" required>
-        <input type="email" name="email" placeholder="Your Email" required>
-        <textarea name="message" placeholder="Message"></textarea>
-        <button type="submit">Send</button>
-    </form>
-</section>
-
-<script src="particles.min.js"></script>
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script src="main.js"></script>
+  <footer>
+    © 2026 Elite Premium UI | Designed with Excellence
+  </footer>
 
 </body>
 </html>
