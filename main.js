@@ -1,11 +1,16 @@
-const cards = document.querySelectorAll('.card');
-
-window.addEventListener('scroll', () => {
-    cards.forEach(card => {
-        const cardTop = card.getBoundingClientRect().top;
-        if(cardTop < window.innerHeight - 50){
-            card.style.opacity = "1";
-            card.style.transform = "translateY(0)";
-        }
-    });
+// Typing Effect
+var typed = new Typed("#typing", {
+    strings: ["Data Analyst", "BI Developer", "SQL Specialist", "Power BI Expert"],
+    typeSpeed: 60,
+    backSpeed: 40,
+    loop: true
 });
+
+// Dark / Light Toggle
+const toggle = document.getElementById("themeToggle");
+toggle.addEventListener("click", () => {
+    document.body.classList.toggle("light-mode");
+});
+
+// AOS Animation Init
+AOS.init();
