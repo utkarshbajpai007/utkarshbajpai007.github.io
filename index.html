@@ -3,99 +3,224 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Utkarsh Bajpai | Data Analyst</title>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<title>Utkarsh Bajpai | Data Analyst Portfolio</title>
+
 <link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
+<!-- ================= HEADER ================= -->
 <header>
-<nav class="navbar">
-<div class="logo">Utkarsh Bajpai</div>
-<ul class="nav-links">
-<li><a href="#home">Home</a></li>
-<li><a href="#about">About</a></li>
-<li><a href="#services">Services</a></li>
-<li><a href="#education">Education</a></li>
-<li><a href="#skills">Skills</a></li>
-<li><a href="#experience">Experience</a></li>
-<li><a href="#projects">Projects</a></li>
-<li><a href="#portfolio">Portfolio</a></li>
-<li><a href="#certificates">Certificates</a></li>
-<li><a href="#blogs">Blogs</a></li>
-<li><a href="#contact">Contact</a></li>
-</ul>
-</nav>
+    <div class="logo">Utkarsh Bajpai</div>
+
+    <nav>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#experience">Work Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#certificates">Certificates & Awards</a></li>
+            <li><a href="#blogs">Blogs</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
 </header>
 
-<!-- HERO -->
-<section id="home" class="hero section">
-<div class="hero-text">
-<h1>Hello, I'm <span>Utkarsh Bajpai</span></h1>
-<p id="typing"></p>
-<a href="resume.pdf" class="btn" download>Download Resume</a>
-</div>
-<div class="hero-image">
-<img src="profile.png" alt="Utkarsh">
-</div>
+
+<!-- ================= HOME ================= -->
+<section id="home" class="hero">
+    <div class="hero-content">
+        <h1>Hello, I'm <span>Utkarsh Bajpai</span></h1>
+        <h3>Data Analyst | SQL | Power BI | Python</h3>
+        <p>
+            I transform raw data into meaningful insights that drive business decisions. 
+            Specialized in data analysis, dashboard development, and business intelligence.
+        </p>
+    </div>
+
+    <div class="hero-img">
+        <!-- Place your profile image inside images folder -->
+        <img src="images/profile.png" alt="Utkarsh Bajpai Profile Photo">
+    </div>
 </section>
 
-<!-- ABOUT -->
-<section id="about" class="section">
-<h2>About Me</h2>
-<p>Passionate Data Analyst skilled in SQL, Power BI, Excel & Python.</p>
+
+<!-- ================= ABOUT ================= -->
+<section id="about">
+    <h2>About Me</h2>
+    <p>
+        I am a detail-oriented and results-driven Data Analyst with strong expertise in SQL,
+        PostgreSQL, Python, Excel, and Power BI. I focus on solving business challenges
+        through structured analysis, visualization, and actionable reporting.
+    </p>
 </section>
 
-<!-- BLOGS -->
-<section id="blogs" class="section dark">
-<h2>Blogs</h2>
-<div class="grid">
 
-<div class="card">
-<img src="blog1.jpg">
-<h3>Power BI Complete Guide</h3>
-<a href="blog1.html" class="read-btn">Read More</a>
-</div>
+<!-- ================= SERVICES ================= -->
+<section id="services">
+    <h2>Services</h2>
 
-<div class="card">
-<img src="blog2.jpg">
-<h3>SQL Performance Optimization</h3>
-<a href="blog2.html" class="read-btn">Read More</a>
-</div>
+    <div class="grid">
+        <div class="card">
+            <h3>Data Analysis</h3>
+            <p>Exploratory data analysis, KPI tracking, and performance reporting.</p>
+        </div>
 
-</div>
+        <div class="card">
+            <h3>Dashboard Development</h3>
+            <p>Interactive and professional dashboards using Power BI & Excel.</p>
+        </div>
+
+        <div class="card">
+            <h3>Business Intelligence</h3>
+            <p>Converting business data into strategic insights and visual reports.</p>
+        </div>
+    </div>
 </section>
 
-<!-- CONTACT -->
-<section id="contact" class="section">
-<h2>Contact Me</h2>
 
-<form action="https://formsubmit.co/mailtoutkarsh_bajpai@rediffmail.com" method="POST" class="contact-form">
-<input type="text" name="name" placeholder="Your Name" required>
-<input type="email" name="email" placeholder="Your Email" required>
-<textarea name="message" placeholder="Your Message" required></textarea>
+<!-- ================= EDUCATION ================= -->
+<section id="education">
+    <h2>Education</h2>
 
-<input type="hidden" name="_captcha" value="false">
-<button type="submit" class="btn">Send Message</button>
-</form>
-
+    <div class="card">
+        <h3>Bachelor’s Degree</h3>
+        <p>University Name</p>
+        <p>Year of Completion: 2022</p>
+    </div>
 </section>
 
-<script>
 
-/* Typing Effect */
-const text="Data Analyst | Power BI | SQL | Python";
-let i=0;
-function typing(){
-if(i<text.length){
-document.getElementById("typing").innerHTML+=text.charAt(i);
-i++;
-setTimeout(typing,60);
-}}
-typing();
+<!-- ================= SKILLS ================= -->
+<section id="skills">
+    <h2>Skills</h2>
 
-</script>
+    <div class="skills">
+        <span>SQL</span>
+        <span>PostgreSQL</span>
+        <span>Python</span>
+        <span>Power BI</span>
+        <span>Excel</span>
+        <span>Data Visualization</span>
+    </div>
+</section>
+
+
+<!-- ================= EXPERIENCE ================= -->
+<section id="experience">
+    <h2>Work Experience</h2>
+
+    <div class="card">
+        <h3>Data Analyst Intern</h3>
+        <p>Company Name</p>
+        <p>
+            Developed dashboards, automated reports, and performed sales & business analysis.
+        </p>
+    </div>
+</section>
+
+
+<!-- ================= PROJECTS ================= -->
+<section id="projects">
+    <h2>Projects</h2>
+
+    <div class="grid">
+        <div class="card">
+            <h3>Sales Performance Dashboard</h3>
+            <p>Power BI dashboard analyzing revenue and performance metrics.</p>
+        </div>
+
+        <div class="card">
+            <h3>Healthcare Data Analysis</h3>
+            <p>Python-based EDA and statistical insights from healthcare dataset.</p>
+        </div>
+    </div>
+</section>
+
+
+<!-- ================= PORTFOLIO ================= -->
+<section id="portfolio">
+    <h2>Portfolio</h2>
+
+    <div class="grid">
+        <div class="card">
+            <img src="images/portfolio1.png" alt="Dashboard Screenshot">
+            <p>Dashboard Visualization Sample</p>
+        </div>
+
+        <div class="card">
+            <img src="images/portfolio2.png" alt="Project Visualization">
+            <p>Data Visualization Project</p>
+        </div>
+    </div>
+</section>
+
+
+<!-- ================= CERTIFICATES ================= -->
+<section id="certificates">
+    <h2>Certificates & Awards</h2>
+
+    <div class="grid">
+        <div class="card">
+            <img src="images/cert1.png" alt="Certificate">
+            <p>Google Data Analytics Certification</p>
+        </div>
+
+        <div class="card">
+            <img src="images/cert2.png" alt="Certificate">
+            <p>Microsoft Power BI Certification</p>
+        </div>
+    </div>
+</section>
+
+
+<!-- ================= BLOGS ================= -->
+<section id="blogs">
+    <h2>Blogs</h2>
+
+    <div class="grid">
+        <div class="card">
+            <img src="images/blog1.png" alt="Blog Thumbnail">
+            <h3>SQL Optimization Techniques</h3>
+            <p>Best practices to improve query performance.</p>
+        </div>
+
+        <div class="card">
+            <img src="images/blog2.png" alt="Blog Thumbnail">
+            <h3>Power BI Dashboard Design</h3>
+            <p>Design principles for professional BI dashboards.</p>
+        </div>
+    </div>
+</section>
+
+
+<!-- ================= CONTACT ================= -->
+<section id="contact">
+    <h2>Contact Me</h2>
+
+    <!-- Replace with your actual Formspree ID -->
+    <form action="https://formspree.io/f/yourformid" method="POST">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+    </form>
+</section>
+
+
+<!-- ================= FOOTER ================= -->
+<footer>
+    <p>© 2026 Utkarsh Bajpai. All Rights Reserved.</p>
+</footer>
+
+<script src="main.js"></script>
 
 </body>
 </html>
