@@ -4,7 +4,6 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Utkarsh Bajpai | Data Analyst</title>
-
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
@@ -13,14 +12,14 @@
 
 <header>
 <nav class="navbar">
-<div class="logo">Utkarsh</div>
+<div class="logo">Utkarsh Bajpai</div>
 <ul class="nav-links">
 <li><a href="#home">Home</a></li>
 <li><a href="#about">About</a></li>
 <li><a href="#services">Services</a></li>
 <li><a href="#education">Education</a></li>
 <li><a href="#skills">Skills</a></li>
-<li><a href="#experience">Work Experience</a></li>
+<li><a href="#experience">Experience</a></li>
 <li><a href="#projects">Projects</a></li>
 <li><a href="#portfolio">Portfolio</a></li>
 <li><a href="#certificates">Certificates</a></li>
@@ -37,7 +36,6 @@
 <p id="typing"></p>
 <a href="resume.pdf" class="btn" download>Download Resume</a>
 </div>
-
 <div class="hero-image">
 <img src="profile.png" alt="Utkarsh">
 </div>
@@ -46,150 +44,57 @@
 <!-- ABOUT -->
 <section id="about" class="section">
 <h2>About Me</h2>
-<p>I am a passionate Data Analyst skilled in SQL, Power BI, Excel & Python. I transform raw data into meaningful business insights.</p>
-</section>
-
-<!-- SERVICES -->
-<section id="services" class="section dark">
-<h2>Services</h2>
-<div class="grid">
-<div class="card"><h3>Data Analysis</h3><p>Advanced SQL & data cleaning.</p></div>
-<div class="card"><h3>Dashboard Development</h3><p>Interactive Power BI dashboards.</p></div>
-<div class="card"><h3>Business Insights</h3><p>Strategic data-driven decisions.</p></div>
-</div>
-</section>
-
-<!-- EDUCATION -->
-<section id="education" class="section">
-<h2>Education</h2>
-<div class="card">
-<h3>Your Degree</h3>
-<p>University Name | Year</p>
-</div>
-</section>
-
-<!-- SKILLS -->
-<section id="skills" class="section dark">
-<h2>Skills</h2>
-<div class="skills">
-<span>SQL</span>
-<span>Power BI</span>
-<span>Excel</span>
-<span>Python</span>
-<span>Data Visualization</span>
-</div>
-</section>
-
-<!-- EXPERIENCE -->
-<section id="experience" class="section">
-<h2>Work Experience</h2>
-<div class="card">
-<h3>Data Analyst</h3>
-<p>Company Name | Duration</p>
-<p>Created dashboards & automated reports.</p>
-</div>
-</section>
-
-<!-- PROJECTS -->
-<section id="projects" class="section dark">
-<h2>Projects</h2>
-<div class="grid">
-<div class="card">
-<img src="blog1.jpg">
-<div class="overlay">View Project</div>
-<h3>Sales Dashboard</h3>
-</div>
-<div class="card">
-<img src="blog2.jpg">
-<div class="overlay">View Project</div>
-<h3>SQL Optimization</h3>
-</div>
-</div>
-</section>
-
-<!-- PORTFOLIO -->
-<section id="portfolio" class="section">
-<h2>Portfolio</h2>
-<div class="grid">
-<div class="card">Portfolio Item 1</div>
-<div class="card">Portfolio Item 2</div>
-</div>
-</section>
-
-<!-- CERTIFICATES -->
-<section id="certificates" class="section dark">
-<h2>Certificates & Awards</h2>
-<div class="grid">
-<div class="card">
-<img src="cert1.jpg">
-<h3>Data Analytics Certification</h3>
-</div>
-<div class="card">
-<img src="cert2.jpg">
-<h3>Best Performer Award</h3>
-</div>
-</div>
+<p>Passionate Data Analyst skilled in SQL, Power BI, Excel & Python.</p>
 </section>
 
 <!-- BLOGS -->
-<section id="blogs" class="section">
+<section id="blogs" class="section dark">
 <h2>Blogs</h2>
 <div class="grid">
+
 <div class="card">
 <img src="blog1.jpg">
-<h3>Power BI Guide</h3>
+<h3>Power BI Complete Guide</h3>
+<a href="blog1.html" class="read-btn">Read More</a>
 </div>
+
 <div class="card">
 <img src="blog2.jpg">
-<h3>SQL Performance Tips</h3>
+<h3>SQL Performance Optimization</h3>
+<a href="blog2.html" class="read-btn">Read More</a>
 </div>
+
 </div>
 </section>
 
 <!-- CONTACT -->
-<section id="contact" class="section dark">
-<h2>Contact</h2>
-<p>Email: your@email.com</p>
+<section id="contact" class="section">
+<h2>Contact Me</h2>
+
+<form action="https://formsubmit.co/YOUR_EMAIL@gmail.com" method="POST" class="contact-form">
+<input type="text" name="name" placeholder="Your Name" required>
+<input type="email" name="email" placeholder="Your Email" required>
+<textarea name="message" placeholder="Your Message" required></textarea>
+
+<input type="hidden" name="_captcha" value="false">
+<button type="submit" class="btn">Send Message</button>
+</form>
+
 </section>
 
-<button id="theme-toggle">🌙</button>
-
 <script>
+
 /* Typing Effect */
-const text = "Data Analyst | Power BI | SQL | Python";
-let i = 0;
+const text="Data Analyst | Power BI | SQL | Python";
+let i=0;
 function typing(){
-if(i < text.length){
-document.getElementById("typing").innerHTML += text.charAt(i);
+if(i<text.length){
+document.getElementById("typing").innerHTML+=text.charAt(i);
 i++;
 setTimeout(typing,60);
 }}
 typing();
 
-/* Scroll Reveal */
-const sections = document.querySelectorAll(".section");
-window.addEventListener("scroll",()=>{
-sections.forEach(sec=>{
-if(sec.getBoundingClientRect().top < window.innerHeight - 100){
-sec.classList.add("active");
-}});
-});
-
-/* Light Mode Toggle */
-document.getElementById("theme-toggle").onclick = ()=>{
-document.body.classList.toggle("light");
-};
-
-/* Certificate Popup */
-document.querySelectorAll("#certificates img").forEach(img=>{
-img.onclick = ()=>{
-const modal = document.createElement("div");
-modal.className="modal";
-modal.innerHTML=`<img src="${img.src}">`;
-modal.onclick=()=>modal.remove();
-document.body.appendChild(modal);
-};
-});
 </script>
 
 </body>
