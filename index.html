@@ -3,7 +3,6 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <title>Utkarsh Bajpai | Data Analyst Portfolio</title>
 
 <link rel="stylesheet" href="style.css">
@@ -12,210 +11,166 @@
 
 <body>
 
-<!-- ================= HEADER ================= -->
-<header>
+<!-- ================= NAVBAR ================= -->
+<header class="navbar">
     <div class="logo">Utkarsh Bajpai</div>
-
     <nav>
         <ul class="nav-links">
             <li><a href="#home">Home</a></li>
-            <li><a href="#about">About Me</a></li>
+            <li><a href="#about">About</a></li>
             <li><a href="#services">Services</a></li>
             <li><a href="#education">Education</a></li>
             <li><a href="#skills">Skills</a></li>
-            <li><a href="#experience">Work Experience</a></li>
+            <li><a href="#experience">Experience</a></li>
             <li><a href="#projects">Projects</a></li>
             <li><a href="#portfolio">Portfolio</a></li>
-            <li><a href="#certificates">Certificates & Awards</a></li>
+            <li><a href="#certificates">Certificates</a></li>
             <li><a href="#blogs">Blogs</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
 </header>
 
-
-<!-- ================= HOME ================= -->
+<!-- ================= HERO ================= -->
 <section id="home" class="hero">
-    <div class="hero-content">
-        <h1>Hello, I'm <span>Utkarsh Bajpai</span></h1>
-        <h3>Data Analyst | SQL | Power BI | Python</h3>
-        <p>
-            I transform raw data into meaningful insights that drive business decisions. 
-            Specialized in data analysis, dashboard development, and business intelligence.
-        </p>
-    </div>
+    <div class="hero-container">
+        
+        <!-- LEFT SIDE -->
+        <div class="hero-left">
+            <h1>Hi, I'm <span>Utkarsh Bajpai</span></h1>
+            <h3>Data Analyst | SQL | Power BI | Python</h3>
+            <p>
+                Transforming complex data into actionable insights. 
+                I specialize in analytics, dashboards, and business intelligence.
+            </p>
+            <div class="hero-buttons">
+                <a href="#projects" class="btn-primary">View Projects</a>
+                <a href="#contact" class="btn-outline">Hire Me</a>
+            </div>
+        </div>
 
-    <div class="hero-img">
-        <!-- Place your profile image inside images folder -->
-        <img src="images/profile.png" alt="Utkarsh Bajpai Profile Photo">
+        <!-- RIGHT SIDE -->
+        <div class="hero-right">
+            <img src="images/profile.png" alt="Utkarsh Bajpai">
+        </div>
+
     </div>
 </section>
 
-
 <!-- ================= ABOUT ================= -->
-<section id="about">
-    <h2>About Me</h2>
-    <p>
-        I am a detail-oriented and results-driven Data Analyst with strong expertise in SQL,
-        PostgreSQL, Python, Excel, and Power BI. I focus on solving business challenges
-        through structured analysis, visualization, and actionable reporting.
+<section id="about" class="section">
+    <h2 class="section-title">About Me</h2>
+    <p class="section-text">
+        Detail-oriented Data Analyst with expertise in SQL, PostgreSQL, Python, Excel, and Power BI.
+        Passionate about solving business challenges using data-driven strategies.
     </p>
 </section>
 
-
 <!-- ================= SERVICES ================= -->
-<section id="services">
-    <h2>Services</h2>
-
-    <div class="grid">
-        <div class="card">
-            <h3>Data Analysis</h3>
-            <p>Exploratory data analysis, KPI tracking, and performance reporting.</p>
-        </div>
-
-        <div class="card">
-            <h3>Dashboard Development</h3>
-            <p>Interactive and professional dashboards using Power BI & Excel.</p>
-        </div>
-
-        <div class="card">
-            <h3>Business Intelligence</h3>
-            <p>Converting business data into strategic insights and visual reports.</p>
-        </div>
+<section id="services" class="section">
+    <h2 class="section-title">Services</h2>
+    <div class="card-grid">
+        <div class="card">Data Analysis</div>
+        <div class="card">Dashboard Development</div>
+        <div class="card">Business Intelligence</div>
     </div>
 </section>
-
 
 <!-- ================= EDUCATION ================= -->
-<section id="education">
-    <h2>Education</h2>
-
+<section id="education" class="section">
+    <h2 class="section-title">Education</h2>
     <div class="card">
-        <h3>Bachelor’s Degree</h3>
-        <p>University Name</p>
-        <p>Year of Completion: 2022</p>
+        Bachelor’s Degree – University Name (2022)
     </div>
 </section>
 
-
 <!-- ================= SKILLS ================= -->
-<section id="skills">
-    <h2>Skills</h2>
-
-    <div class="skills">
+<section id="skills" class="section">
+    <h2 class="section-title">Skills</h2>
+    <div class="skills-container">
         <span>SQL</span>
         <span>PostgreSQL</span>
         <span>Python</span>
         <span>Power BI</span>
         <span>Excel</span>
-        <span>Data Visualization</span>
     </div>
 </section>
-
 
 <!-- ================= EXPERIENCE ================= -->
-<section id="experience">
-    <h2>Work Experience</h2>
-
+<section id="experience" class="section">
+    <h2 class="section-title">Work Experience</h2>
     <div class="card">
-        <h3>Data Analyst Intern</h3>
-        <p>Company Name</p>
-        <p>
-            Developed dashboards, automated reports, and performed sales & business analysis.
-        </p>
+        Data Analyst Intern – Company Name  
+        <br>
+        Developed dashboards and automated reporting systems.
     </div>
 </section>
-
 
 <!-- ================= PROJECTS ================= -->
-<section id="projects">
-    <h2>Projects</h2>
-
-    <div class="grid">
-        <div class="card">
-            <h3>Sales Performance Dashboard</h3>
-            <p>Power BI dashboard analyzing revenue and performance metrics.</p>
-        </div>
-
-        <div class="card">
-            <h3>Healthcare Data Analysis</h3>
-            <p>Python-based EDA and statistical insights from healthcare dataset.</p>
-        </div>
+<section id="projects" class="section">
+    <h2 class="section-title">Projects</h2>
+    <div class="card-grid">
+        <div class="card">Sales Performance Dashboard</div>
+        <div class="card">Healthcare Data Analysis</div>
     </div>
 </section>
-
 
 <!-- ================= PORTFOLIO ================= -->
-<section id="portfolio">
-    <h2>Portfolio</h2>
-
-    <div class="grid">
+<section id="portfolio" class="section">
+    <h2 class="section-title">Portfolio</h2>
+    <div class="card-grid">
         <div class="card">
-            <img src="images/portfolio1.png" alt="Dashboard Screenshot">
-            <p>Dashboard Visualization Sample</p>
+            <img src="images/portfolio1.png" alt="">
+            Dashboard Sample
         </div>
-
         <div class="card">
-            <img src="images/portfolio2.png" alt="Project Visualization">
-            <p>Data Visualization Project</p>
+            <img src="images/portfolio2.png" alt="">
+            Visualization Sample
         </div>
     </div>
 </section>
-
 
 <!-- ================= CERTIFICATES ================= -->
-<section id="certificates">
-    <h2>Certificates & Awards</h2>
-
-    <div class="grid">
+<section id="certificates" class="section">
+    <h2 class="section-title">Certificates & Awards</h2>
+    <div class="card-grid">
         <div class="card">
-            <img src="images/cert1.png" alt="Certificate">
-            <p>Google Data Analytics Certification</p>
+            <img src="images/cert1.png" alt="">
+            Google Data Analytics Certification
         </div>
-
         <div class="card">
-            <img src="images/cert2.png" alt="Certificate">
-            <p>Microsoft Power BI Certification</p>
+            <img src="images/cert2.png" alt="">
+            Microsoft Power BI Certification
         </div>
     </div>
 </section>
-
 
 <!-- ================= BLOGS ================= -->
-<section id="blogs">
-    <h2>Blogs</h2>
-
-    <div class="grid">
+<section id="blogs" class="section">
+    <h2 class="section-title">Blogs</h2>
+    <div class="card-grid">
         <div class="card">
-            <img src="images/blog1.png" alt="Blog Thumbnail">
-            <h3>SQL Optimization Techniques</h3>
-            <p>Best practices to improve query performance.</p>
+            <img src="images/blog1.png" alt="">
+            SQL Optimization Techniques
         </div>
-
         <div class="card">
-            <img src="images/blog2.png" alt="Blog Thumbnail">
-            <h3>Power BI Dashboard Design</h3>
-            <p>Design principles for professional BI dashboards.</p>
+            <img src="images/blog2.png" alt="">
+            Power BI Dashboard Design
         </div>
     </div>
 </section>
 
-
 <!-- ================= CONTACT ================= -->
-<section id="contact">
-    <h2>Contact Me</h2>
-
-    <!-- Replace with your actual Formspree ID -->
-    <form action="https://formspree.io/f/yourformid" method="POST">
+<section id="contact" class="section">
+    <h2 class="section-title">Contact Me</h2>
+    <form action="https://formspree.io/f/yourformid" method="POST" class="contact-form">
         <input type="text" name="name" placeholder="Your Name" required>
         <input type="email" name="email" placeholder="Your Email" required>
-        <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
-        <button type="submit">Send Message</button>
+        <textarea name="message" placeholder="Your Message" required></textarea>
+        <button type="submit" class="btn-primary">Send Message</button>
     </form>
 </section>
 
-
-<!-- ================= FOOTER ================= -->
 <footer>
     <p>© 2026 Utkarsh Bajpai. All Rights Reserved.</p>
 </footer>
